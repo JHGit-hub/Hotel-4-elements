@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Hotel 4 Élements</title>
+		<link rel="icon" type="image/png" href="favicon.png">
+		<meta name="description" content="Découvrez les hôtel du groupe 4 Éléments, bâtis ses hôtels dans des lieux insolites à l'écart du tourisme de masse. Vivez une expérience unique et authentique.">
+		<link rel="stylesheet" href="fonts/styles.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<header>
+			<div class="header-desktop"> <!-- header du desktop -->
+				<div class="menu">
+					<div class="logo">
+						<img src="assets/images/logo/logo-noir-4-elements.png" alt="logo du groupe d'hôtels 4 Élements">
+					</div>
+					<nav class="navbar">
+						<ul>
+							<li><a href="pages/hotel-feu.html" title="Hotel Feu du groupe 4 Élements">Feu</a></li>
+							<li><a href="#" title="Hotel Air du groupe d'hôtels 4 Élements">Air</a></li>
+							<li><a href="#" title="Hotel Terre du groupe d'hôtels 4 Élements">Terre</a></li>
+							<li><a href="#" title="Hotel Feu du groupe d'hôtels 4 Élements">Eau</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-contact">
+					<div class="social-desktop">
+						<lu>
+							<li><a href="#" title="Contactez le groupe d'hôtels 4 Élements">contact</a></li>
+							<li><a href="#" title="Visitez la page Instagram du groupe d'hôtels 4 Élements"><img src="assets/images/icons/instagram.svg"></a></li>
+							<li><a href="#" title="Visitez la page Facebook du groupe d'hôtels 4 Élements"><img src="assets/images/icons/facebook.svg"></a></li>
+						</lu>
+					</div>
+					<div class="CTA">
+						<div class="secondary-btn">
+							<a href="pages/formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+						</div>
+						<div class="login">
+							<a href="#" title="Connectez vous à votre compte du groupe d'hôtels 4 Élements">se connecter</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-mobil"> <!-- header du mobil -->
+				<div class="menu-burger">
+					<div class="burger">
+						<a href="#" title="Menu du site mobil du groupe d'hôtels 4 Élements"><img src="assets/images/icons/burger.svg"></a> 
+					</div>
+					<div class="social-mobil">
+						<ul>
+							<li><a href="#" title="Visitez la page Instagram du groupe d'hôtels 4 Élements"><img src="assets/images/icons/instagram-white.svg"></a></li>
+							<li><a href="#" title="Visitez la page Facebook du groupe d'hôtels 4 Élements"><img src="assets/images/icons/facebook-white.svg"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="section-banner"> <!-- banner du site-->
+				<div class="container-fluid">
+					<div class="video-banner"> 
+						<video autoplay loop muted> <!-- video qui tourne en boucle sans son -->
+							<source src="assets/video/piscine-interieur-hotel-feu.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="title">
+						<h1>Le luxe est notre aventure</h1>
+					</div>
+					<article>
+						<div class="article-form">
+							<form> <!-- formulaire sous le banner -->
+								<h4>recherchez une disponibilité</h4>
+								<div class="select-hotel">
+									<label for="hotel">choisir un hôtel</label>
+									<select name="hotel" id="hotel">
+										<option value="hotel-feu">hôtel feu</option>
+										<option value="hotel-eau">hôtel eau</option>
+										<option value="hotel-air">hôtel air</option>
+										<option value="hotel-terre">hôtel terre</option>
+									</select>
+								</div>
+								<div class="visitor">
+									<label for="visitor">nbr de personnes</label>
+									<input type="number" name="visitor" id="visitor">
+								</div>
+								<div class="date">
+									<label for="arrivee">choisir une date d'arrivée</label>
+									<input type="date" name="arrivee" id="arrivee">
+								</div>
+								<div class="primary-btn"> <!-- ouvrir la page formulaire et garder les données avec le js -->
+									<a href="pages/formulaire.html">
+										<div class="submit">
+											<input type="submit" value="valider">
+										</div>
+									</a>
+								</div>
+							</form>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="section-presentation"> <!-- presentation des hotels -->
+				<div class="container">
+					<div class="row">
+						<article>
+							<div class="article-hotel-feu"> <!-- hotel feu -->
+								<div class="presentation">
+									<div class="title">
+										<h2>hôtel feu</h2>
+										<div class="localisation-rate"> <!-- localisation et rating -->
+											<div class="localisation">
+												<img src="assets/icons/map-pin.svg" alt="Emplacement de l'hotel feu en Finlande">
+												<p>finlande</p>
+											</div>
+											<div class="rate">
+												<div class="stars"></div>
+													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+												</div>
+												<p>(325 avis)</p>
+											</div>
+										</div>
+									</div> <!-- description de l'hotel -->
+									<p>L'hôtel Feu ne se situe bien sûr pas sur un volcan,<br>
+										mais en Finlande.<br>
+										Feu de la terre volcanique crachant non loin de là<br>
+										ses geysers, feu des volcans à l'horizon et, bien <br>
+										entendu, feu des aurores boréales que vous<br>
+										pourrez admirer tous les soirs par le toit vitré de<br>
+										votre chambre.
+									</p>
+									<div class="primary-btn">
+										<a href="pages/formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+									</div>
+								</div>
+							</div>
+							<div class="carrousel" id="carrouselBtn"> <!-- carrousel de photo de l'hotel / gestion en JS -->
+								<div class="slide " id="slide1">
+									<div class="overflow">
+										<img src="assets/images/igloos-hotel-feu.jpg">
+									</div>
+									<div class="dot"> <!-- ajout de points pour inciter au defilement du carrousel -->
+										<img src="images/black-dot.png">
+										<img src="images/white-dot.png">
+										<img src="images/white-dot.png">
+									</div>
+								</div>
+								<div class="slide hidden" id="slide2">
+									<div class="overflow">
+										<img src="assets/images/suite-laponne-hotel-feu.jpg">
+									</div>
+									<div class="dot">
+										<img src="images/white-dot.png">
+										<img src="images/black-dot.png">
+										<img src="images/white-dot.png">
+									</div>
+								</div>
+								<div class="slide hidden" id="slide3">
+									<div class="overflow">
+										<img src="assets/images/vue-ciel-hotel-feu.jpg">
+									</div>
+									<div class="dot">
+										<img src="images/white-dot.png">
+										<img src="images/white-dot.png">
+										<img src="images/black-dot.png">
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="article-hotel-air"> <!--presentation de l'hotel air -->
+								<div class="presentation">
+									<div class="title">
+										<h2>hôtel air</h2>
+										<div class="localisation-rate">
+											<div class="localisation">
+												<img src="assets/icons/map-pin.svg" alt="Emplacement de l'hotel air au Brésil">
+												<p>brésil</p>
+											</div>
+											<div class="rate">
+												<div class="stars"></div>
+													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+												</div>
+												<p>(325 avis)</p>
+											</div>
+										</div>
+									</div>
+									<p>L'hôtel Air se situe à la frontière du Brésil et du<br>
+										Pérou.<br>
+										C'est un concept architectural innovant qui a<br>
+										permis une implantation à la cîme de la forêt pour<br>
+										offrir un panorama vertigineux et cotoyer,<br>
+										chaque matin, de votre chambre (avec ou sans piscine),<br>
+										les oiseaux à votre réveil.										
+									</p>
+									<div class="primary-btn">
+										<a href="pages/formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+									</div>
+								</div>
+							</div>
+							<div class="carrousel" id="carrouselBtn"> <!-- carrousel de photo de l'hotel air -->
+								<div class="slide " id="slide1">
+									<div class="overflow">
+										<img src="assets/images/chambre-cime-hotel-air.jpg">
+									</div>
+									<div class="dot">
+										<img src="images/black-dot.png">
+										<img src="images/white-dot.png">
+										<img src="images/white-dot.png">
+									</div>
+								</div>
+								<div class="slide hidden" id="slide2">
+									<div class="overflow">
+										<img src="assets/images/pont-suspendu-hotel-air.jpg">
+									</div>
+									<div class="dot">
+										<img src="images/white-dot.png">
+										<img src="images/black-dot.png">
+										<img src="images/white-dot.png">
+									</div>
+								</div>
+								<div class="slide hidden" id="slide3">
+									<div class="overflow">
+										<img src="assets/images/suite-piscine-cime-hotel-air.jpg">
+									</div>
+									<div class="dot">
+										<img src="images/white-dot.png">
+										<img src="images/white-dot.png">
+										<img src="images/black-dot.png">
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="article-hotel-terre"> <!--presentation de l'hotel terre -->
+								<div class="presentation">
+									<div class="title">
+										<h2>hôtel terre</h2>
+										<div class="localisation-rate">
+											<div class="localisation">
+												<img src="assets/icons/map-pin.svg" alt="Emplacement de l'hotel terre en Thaïlande">
+												<p>thaïlande</p>
+											</div>
+											<div class="rate">
+												<div class="stars"></div>
+													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+												</div>
+												<p>(325 avis)</p>
+											</div>
+										</div>
+									</div>
+									<p>L'hôtel Terre est situé dans des grottes naturelles<br>
+										en Thaïlande. Retaillées et aménagées avec<br>
+										beaucoup de soin, les chambres de l'hôtel vous<br>
+										offriront soit la fraîcheur et l'apaisement à près de<br>
+										vingt mètres de profondeur, soit un hâvre de paix<br>
+										ouvrant sur l'horizon de la mer au loin.										
+									</p>
+									<div class="primary-btn">
+										<a href="pages/formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+									</div>
+								</div>
+							</div>
+							<div class="carrousel" id="carrouselBtn"> <!-- carrousel de photo de l'hotel terre -->
+								<div class="slide " id="slide1">
+									<div class="overflow">
+										<img src="assets/images/suite-grotte-hotel-terre.jpg">
+									</div>
+									<div class="dot">
+										<img src="images/black-dot.png">
+										<img src="images/white-dot.png">
+										<img src="images/white-dot.png">
+									</div>
+								</div>
+								<div class="slide hidden" id="slide2">
+									<div class="overflow">
+										<img src="assets/images/restaurant-grotte-hotel-terre.jpg">
+									</div>
+									<div class="dot">
+										<img src="images/white-dot.png">
+										<img src="images/black-dot.png">
+										<img src="images/white-dot.png">
+									</div>
+								</div>
+								<div class="slide hidden" id="slide3">
+									<div class="overflow">
+										<img src="assets/images/suite-royal-hotel-terre.jpg">
+									</div>
+									<div class="dot">
+										<img src="images/white-dot.png">
+										<img src="images/white-dot.png">
+										<img src="images/black-dot.png">
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="article-hotel-eau"> <!--presentation de l'hotel eau -->
+								<div class="presentation">
+									<div class="title">
+										<h2>hôtel eau</h2>
+										<div class="localisation-rate">
+											<div class="localisation">
+												<img src="assets/icons/map-pin.svg" alt="Emplacement de l'hotel eau dans le pacifique">
+												<p>thaïlande</p>
+											</div>
+											<div class="rate">
+												<div class="stars"></div>
+													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+												</div>
+												<p>(325 avis)</p>
+											</div>
+										</div>
+									</div>
+									<p>L'hôtel Eau est situé sur une île de 2 kilomètres<br>
+										carrés très exactement équidistante de<br>
+										Vladivostok et de Los Angeles. C'est le milieu<br>
+										du Pacifique. Vous y disposerez de votre plage, de<br>
+										votre bateau et de votre majordome privés. Votre<br>
+										chambre est un caisson immergé à deux mètres<br>
+										sous l'eau.										
+									</p>
+									<div class="primary-btn">
+										<a href="pages/formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+									</div>
+								</div>
+							</div>
+							<div class="carrousel" id="carrouselBtn"> <!-- carrousel de photo de l'hotel eau -->
+								<div class="slide " id="slide1">
+									<div class="overflow">
+										<img src="assets/images/plongeur-ocean-pacifique-hotel-eau.jpg">
+									</div>
+									<div class="dot">
+										<img src="images/black-dot.png">
+										<img src="images/white-dot.png">
+										<img src="images/white-dot.png">
+									</div>
+								</div>
+								<div class="slide hidden" id="slide2">
+									<div class="overflow">
+										<img src="assets/images/suite-vue-sous-ocean-hotel-eau.jpg">
+									</div>
+									<div class="dot">
+										<img src="images/white-dot.png">
+										<img src="images/black-dot.png">
+										<img src="images/white-dot.png">
+									</div>
+								</div>
+								<div class="slide hidden" id="slide3">
+									<div class="overflow">
+										<img src="assets/images/suite-royal-piscine-hotel-eau.jpg">
+									</div>
+									<div class="dot">
+										<img src="images/white-dot.png">
+										<img src="images/white-dot.png">
+										<img src="images/black-dot.png">
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+		</footer>
+	</body>
+	<script src="script.js"></script>
+</html>
