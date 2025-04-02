@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Découvrez l'hôtel Feu du groupe 4 Éléments, dans un lieux insolites à l'écart du tourisme de masse. Vivez une expérience unique et authentique.">
+    <link rel="stylesheet" href="../fonts/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-desktop"> <!-- header du desktop -->
+            <div class="menu">
+                <div class="logo">
+                    <a href="../index.html" title="retour à la page d'accueil du site des hôtels du groupe 4 Éléments">
+                        <img src="../assets/images/logo/logo-noir-4-elements.png" alt="logo du groupe d'hôtels 4 Élements">
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../pages/hotel-feu.html" title="Hotel Feu du groupe 4 Élements">Feu</a></li>
+                        <li><a href="#" title="Hotel Air du groupe d'hôtels 4 Élements">Air</a></li>
+                        <li><a href="#" title="Hotel Terre du groupe d'hôtels 4 Élements">Terre</a></li>
+                        <li><a href="#" title="Hotel Feu du groupe d'hôtels 4 Élements">Eau</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-contact">
+                <div class="social-desktop">
+                    <lu>
+                        <li><a href="#" title="Contactez le groupe d'hôtels 4 Élements">contact</a></li>
+                        <li><a href="#" title="Visitez la page Instagram du groupe d'hôtels 4 Élements"><img src="../assets/images/icons/instagram.svg"></a></li>
+                        <li><a href="#" title="Visitez la page Facebook du groupe d'hôtels 4 Élements"><img src="../assets/images/icons/facebook.svg"></a></li>
+                    </lu>
+                </div>
+                <div class="CTA">
+                    <div class="secondary-btn">
+                        <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+                    </div>
+                    <div class="login">
+                        <a href="#" title="Connectez vous à votre compte du groupe d'hôtels 4 Élements">se connecter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobil"> <!-- header du mobil -->
+            <div class="menu-burger">
+                <div class="burger">
+                    <a href="#" title="Menu du site mobil du groupe d'hôtels 4 Élements"><img src="../assets/images/icons/burger.svg"></a> 
+                </div>
+                <div class="social-mobil">
+                    <ul>
+                        <li><a href="#" title="Visitez la page Instagram du groupe d'hôtels 4 Élements"><img src="../assets/images/icons/instagram-white.svg" alt="icone du lien pour la page instagram des hotels du groupe 4 Élements"></a></li>
+                        <li><a href="#" title="Visitez la page Facebook du groupe d'hôtels 4 Élements"><img src="../assets/images/icons/facebook-white.svg"  alt="icone du lien pour la page facebook des hotels du groupe 4 Élements"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-presentation"> <!-- presentation des hotels -->
+            <div class="container">
+                <div class="row">
+                    <article>
+                        <div class="article-hotel-feu"> <!-- hotel feu -->
+                            <div class="presentation">
+                                <div class="title">
+                                    <h2>hôtel feu</h2>
+                                    <div class="localisation-rate"> <!-- localisation et rating -->
+                                        <div class="localisation">
+                                            <img src="../assets/icons/map-pin.svg" alt="Emplacement de l'hotel feu en Finlande du groupe 4 Élements">
+                                            <p>finlande</p>
+                                        </div>
+                                        <div class="rate">
+                                            <div class="stars"></div>
+                                                <img src="../assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                                <img src="../assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                                <img src="../assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                                <img src="../assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+                                            </div>
+                                            <p>(325 avis)</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- description de l'hotel -->
+                                <p>L'hôtel Feu ne se situe bien sûr pas sur un volcan,<br>
+                                    mais en Finlande.<br>
+                                    Feu de la terre volcanique crachant non loin de là<br>
+                                    ses geysers, feu des volcans à l'horizon et, bien <br>
+                                    entendu, feu des aurores boréales que vous<br>
+                                    pourrez admirer tous les soirs par le toit vitré de<br>
+                                    votre chambre.
+                                </p>
+                                <div class="primary-btn">
+                                    <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrousel" id="carrouselBtn"> <!-- carrousel de photo de l'hotel / gestion en JS -->
+                            <div class="slide " id="slide1">
+                                <div class="overflow">
+                                    <img src="../assets/images/igloos-hotel-feu.jpg" alt="photo des chambres igloos de l'hotel feu du groupe 4 Élements">
+                                </div>
+                                <div class="dot"> <!-- ajout de points pour inciter au defilement du carrousel -->
+                                    <img src="../assets/images/icons/dark-dot.png">
+                                    <img src="../assets/images/icons/white-dot.png">
+                                    <img src="../assets/images/icons/white-dot.png">
+                                </div>
+                            </div>
+                            <div class="slide hidden" id="slide2">
+                                <div class="overflow">
+                                    <img src="assets/images/suite-laponne-hotel-feu.jpg" alt="photo de la suite laponne de l'hotel feu du groupe 4 Élements">
+                                </div>
+                                <div class="dot">
+                                    <img src="../assets/images/icons/white-dot.png">
+                                    <img src="../assets/images/icons/dark-dot.png">
+                                    <img src="../assets/images/icons/white-dot.png">
+                                </div>
+                            </div>
+                            <div class="slide hidden" id="slide3">
+                                <div class="overflow">
+                                    <img src="../assets/images/vue-ciel-hotel-feu.jpg" alt="photo vue du ciel de l'hotel feu du groupe 4 Élements">
+                                </div>
+                                <div class="dot">
+                                    <img src="../assets/images/icons/white-dot.png">
+                                    <img src="../assets/images/icons/white-dot.png">
+                                    <img src="../assets/images/icons/dark-dot.png">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="offers"> <!-- presentation des offres de l'hotel Feu -->
+            <div class="container">
+                <article>
+                    <h3>les offres de l'hôtel feu</h3>
+                    <div class="offers">
+                        <div class="block"> <!-- chambre igloo -->
+                            <div class="offers-img">
+                                <img src="../assets/images/vue-ciel-hotel-feu.jpg" alt="photo vue du ciel de l'hotel feu du groupe 4 Élements">
+                            </div>
+                            <div class="offers-details">
+                                <h4>Découvrez nos igloos et voyagez<br>
+                                    le temps d'une nuit
+                                </h4>
+                                <p>Plongez-vous dans une nuit magique où le temps<br>
+                                    semble suspendu. Nos igloos offrent une atmosphère<br>
+                                    chaleureuse et dépaysante, vous invitant à vivre une<br>
+                                    aventure hors du commun. Chaque détail a été <br>
+                                    oigneusement pensé pour créer une escapade<br>
+                                    mémorable. Profitez de l'intimité et du confort de nos<br>
+                                    hébergements glacés tout en vous laissant<br>
+                                    imprégner par la beauté éphémère de cet<br>
+                                    environnement. Offrez-vous une nuit inoubliable dans<br>
+                                    nos igloos, une expérience qui restera gravée dans<br>
+                                    vos souvenirs.
+                                </p>
+                                <div class="offers-picto"> <!-- differentes options de la chambre igloo -->
+                                    <div class="picto-details">
+                                        <div class="pictos-column">
+                                            <div class="pictos">
+                                                <img src="../assets/images/icons/sparkle.svg" alt="icone du SPA">
+                                                <p>spa</p>
+                                            </div>
+                                            <div class="pictos">
+                                                <img src="../assets/images/icons/car.svg" alt="icone du parking">
+                                                <p>parking</p>
+                                            </div>
+                                            <div class="pictos">
+                                                <img src="../assets/images/icons/snowflake.svg" alt="icone de la climatisation">
+                                                <p>climatisation</p>
+                                            </div>
+                                        </div>
+                                        <div class="pictos-column">
+                                            <div class="pictos">
+                                                <img src="../assets/images/icons/swimming-pool.svg" alt="icone de la piscine">
+                                                <p>piscine</p>
+                                            </div>
+                                            <div class="pictos">
+                                                <img src="../assets/images/icons/barbell.svg" alt="icone des haltéres">
+                                                <p>salle de sport</p>
+                                            </div>
+                                            <div class="pictos">
+                                                <img src="../assets/images/icons/bus.svg" alt="icone des transports en commun">
+                                                <p>transport aéroport</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>+ de details</p>
+                                </div>
+                                <p>à partir de <span class="price">500€ / nuit</span></p>
+                                <div class="primary-btn">
+                                    <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block"> <!-- suite laponie -->
+                            <div class="offers-img">
+                                <img src="../assets/images/interieur-suite-laponne-hotel-feu.jpg" alt="photo de l'interieur de la suite laponne de l'hotel feu du groupe 4 Élements">
+                            </div>
+                            <div class="offers-details">
+                                <h4>Découvrez la suite Laponie et<br>
+                                    voyagez le temps d'une nuit
+                                </h4>
+                                <p>Voyagez le temps d'une nuit à travers un<br>
+                                    hébergement exceptionnel qui évoque la magie et<br>
+                                    l'authenticité de la Laponie. La suite offre un mélange<br>
+                                    enchanteur de confort luxueux et d'éléments inspirés<br>
+                                    de la nature environnante. Imprégnez-vous de<br>
+                                    l'atmosphère enchanteresse de la Laponie tout en<br>
+                                    profitant du luxe et de l'intimité de notre suite.<br>
+                                    Offrez-vous une nuit extraordinaire dans la suite Laponie<br>
+                                    de l'hôtel Feu, où chaque moment promet d'être magique<br>
+                                    et mémorable.
+                                </p>
+                                <div class="offers-picto"> <!-- differentes options de la suite Laponne -->
+                                    <div class="picto-details">
+                                        <div class="pictos-column">
+                                            <div class="pictos">
+                                                <img src="../assets/images/icons/sparkle.svg" alt="icone du SPA">
+                                                <p>spa</p>
+                                            </div>
+                                            <div class="pictos">
+                                                <img src="../assets/images/icons/car.svg" alt="icone du parking">
+                                                <p>parking</p>
+                                            </div>
+                                            <div class="pictos">
+                                                <img src="../assets/images/icons/snowflake.svg" alt="icone de la climatisation">
+                                                <p>climatisation</p>
+                                            </div>
+                                        </div>
+                                        <div class="pictos-column">
+                                            <div class="pictos">
+                                                <img src="../assets/images/icons/swimming-pool.svg" alt="icone de la piscine">
+                                                <p>piscine</p>
+                                            </div>
+                                            <div class="pictos">
+                                                <img src="../assets/images/icons/barbell.svg" alt="icone des haltéres">
+                                                <p>salle de sport</p>
+                                            </div>
+                                            <div class="pictos">
+                                                <img src="../assets/images/icons/bus.svg" alt="icone des transports en commun">
+                                                <p>transport aéroport</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>+ de details</p>
+                                </div>
+                                <p>à partir de <span class="price">850€ / nuit</span></p>
+                                <div class="primary-btn">
+                                    <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="options">
+            <div class="container-fluid">
+                <article>
+                    <div class="options">
+                        <div class="title-options">
+                            <h4>service supplémentaires</h4>
+                            <p>les services supplémentaires ne sont pas comprises dans le tarif de base de la chambre.</p>
+                        </div>
+                        <div class="carrousel-options">
+                            <div class="slide">
+                                <img src="../assets/images/chauffeur-uber-hotel-feu.jpg" alt="chauffeur disponible à l'hotel feu du groupe 4 Élements">
+                                <h4>chauffeur</h4>
+                                <p>explorez la ville en toute sérénité<br>
+                                    avec notre service de chauffeur<br>
+                                    exclusif, offert par l'hôtel
+                                </p>
+                                <h5>11€ / jour</h5>
+                            </div>
+                            <div class="slide">
+                                <img src="../assets/images/petit-dejeuner-hotel-feu.jpg" alt="petit dejeuner gourmand à l'hotel feu du groupe 4 Élements">
+                                <h4>petit déjeuner</h4>
+                                <p>commencez votre journée en beauté<br>
+                                    avec notre service de petit déjeuner<br>
+                                    raffiné.
+                                </p>
+                                <h5>15€ / jour</h5>
+                            </div>
+                            <div class="slide">
+                                <img src="../assets/images/repas-fondue-hotel-feu.jpg" alt="Fondue copieuse à l'hotel feu du groupe 4 Élements">
+                                <h4>petit déjeuner</h4>
+                                <p>deguster notre agréable fondue<br>
+                                    au fromage, avec un délicieux plateaux<br>
+                                    de charcuterie locale.
+                                </p>
+                                <h5>25€ / personnes</h5>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="activity">
+            <div class="container-fluid">
+                <article>
+                    <div class="activity ">
+                        <div class="title-activity ">
+                            <h4>activités proches de l'hôtel</h4>
+                            <p>les activités ne sont pas comprises dans le tarif de base de la chambre.</p>
+                        </div>
+                        <div class="carrousel-activity ">
+                            <div class="slide">
+                                <img src="../assets/images/activite-randonnee-chein-traineaux-hotel-feu.jpg" alt="faites une agréable excursion en chien de traineaux à l'hotel feu du groupe 4 Élements">
+                                <h4>chien de traineaux</h4>
+                                <p>Plongez dans une aventure hivernale<br>
+                                    palpitante en explorant la beauté des<br>
+                                    paysages enneigés lors d'une excursion magique.
+                                </p>
+                                <div class="secondary-btn">
+                                    <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <img src="../assets/images/activite-raquette-randonnee-hotel-feu.jpg" alt="effectué une randonnée en raquette en plein nature à l'hotel feu du groupe 4 Élements">
+                                <h4>rando en raquette</h4>
+                                <p>Parcourez des sentiers immaculés et<br>
+                                    découvrez la tranquillité hivernale<br>
+                                    tout en profitant d'une randonnée en<br>
+                                    raquettes.
+                                </p>
+                                <div class="secondary-btn">
+                                    <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <img src="../assets/images/activite-randonnee-volcan-hotel-feu.png" alt="découvrez la force des volcans avec l'hotel feu du groupe 4 Élements">
+                                <h4>découverte des volcans</h4>
+                                <p>profitez d'une excursion prés des<br>
+                                    volcans toujours en activté et leurs<br>
+                                    incroyables paysages.
+                                </p>
+                                <div class="secondary-btn">
+                                    <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="section-video">
+            <div class="container-fluid">
+                <div class="video-hotel"> 
+                    <video autoplay loop muted> <!-- video qui tourne en boucle sans son -->
+                        <source src="../assets/video/ciel-nuit-panorama-hotel-feu.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section class="section-testimonials">
+            <div class="testimonials">
+                <div class="card">
+                    <div class="indentity-profil">
+                        <div class="img-profil">
+                            <img src="../assets/images/profil1.png" alt="photo de profil d'un témoignage">
+                        </div>
+                        <div class="identification">
+                            <h5>avy johnson</h5>
+                            <div class="testimonials-rating">
+                                <div class="stars">
+                                    <img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                    <img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                    <img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                    <img src="assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+                                </div>
+                                <p>(4,5/5)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Tout simplement exceptionnel. Le personnel était<br>
+                        incroyablement attentionné et chaleureux, toujours<br>
+                        prêt à répondre à mes besoins. La suite Laponie était<br>
+                        décorée avec élégance, offrant un mélange parfait de<br>
+                        confort moderne et d'ambiance nordique. Une<br>
+                        expérience mémorable que je recommande<br>
+                        vivement.</p>
+                </div>
+                <div class="card">
+                    <div class="indentity-profil">
+                        <div class="img-profil">
+                            <img src="../assets/images/profil2.png" alt="photo de profil d'un témoignage">
+                        </div>
+                        <div class="identification">
+                            <h5>thomas capello</h5>
+                            <div class="testimonials-rating">
+                                <div class="stars">
+                                    <img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                    <img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                    <img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                    <img src="assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+                                </div>
+                                <p>(4,5/5)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Mon séjour dans les igloos de l'hôtel Feu a été tout<br>
+                        simplement magique. L'expérience de passer une<br>
+                        nuit dans ces hébergements uniques était à couper<br>
+                        le souffle. Les igloos offrent une ambiance cosy et<br>
+                        chaleureuse, malgré le froid extérieur, grâce à leur<br>
+                        conception bien pensée. Les vues sur le ciel étoilé<br>
+                        depuis le dôme de glace étaient à couper le souffle.
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-social">
+                <div class="logo-footer">
+                    <img src="../assets/images/logo/logo-noir-4-elements.png" alt="logo du groupe 4 Élements">
+                </div>
+                <p>N'attendez plus pour vivre l'expérience 4<br>
+                    éléments le temps d'une nuit.
+                </p>
+                <div class="social-footer">
+                    <img src="../assets/images/icons/instagram.svg"  alt="icone du lien pour la page instagram des hotels du groupe 4 Élements">
+                    <img src="../assets/images/icons/facebook.svg"  alt="icone du lien pour la page facebook des hotels du groupe 4 Élements">
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>contact</p>
+                <div class="adresse-footer">
+                    <p><span class="span-contact">adresse:</span>8 avenue exemple</p>
+                    <p><span class="span-contact">ouverture:</span>tous les jours de 9h à 20h30</p>
+                    <p><span class="span-contact">tèlèphone:</span>33 08 280 28002</p>
+                </div>
+                <div class="secondary-btn">
+                    <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver en ligne</a>
+                </div>
+            </div>
+            <div class="footer-credits">
+                <p>mentions légales</p>
+                <p>crédits</p>
+                <p>CGV</p>
+                <p>confidentialité</p>
+                <p>Design by J.Hardy</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
