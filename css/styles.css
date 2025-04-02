@@ -100,6 +100,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .header-mobil {
@@ -162,6 +163,73 @@ header {
   justify-content: center;
   align-items: center;
   gap: 0.75rem;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 2.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .container-footer {
+  width: 88%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container-footer .footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+}
+footer .container-footer .footer-social .logo-footer {
+  width: 192px;
+  height: 64px;
+}
+footer .container-footer .footer-social .logo-footer img {
+  width: 100%;
+}
+footer .container-footer .footer-social .social-pictos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+}
+footer .container-footer .footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+}
+footer .container-footer .footer-contact h4 {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+footer .container-footer .footer-contact p {
+  text-transform: capitalize;
+}
+footer .container-footer .footer-contact p .span-contact {
+  font-family: "karla-bold";
+  text-transform: capitalize;
+}
+footer .container-footer .footer-credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+}
+footer .container-footer .footer-credits p {
+  font-family: "karla-bold";
+  text-transform: capitalize;
+  font-size: 0.93rem;
 }
 
 .primary-btn {
@@ -371,6 +439,81 @@ header {
   transform: translateX(-500px);
   height: 100%;
   width: auto;
+}
+
+.section-offers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.section-offers .container-offers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4.25rem;
+}
+.section-offers .container-offers .offers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.section-offers .container-offers .offers .room-offers {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4.25rem;
+}
+.section-offers .container-offers .offers .room-offers .offers-img {
+  width: 100%;
+  max-height: 432px;
+  overflow: hidden;
+}
+.section-offers .container-offers .offers .room-offers .offers-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.56rem;
+}
+.section-offers .container-offers .offers .room-offers .offers-details .offers-pictos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+.section-offers .container-offers .offers .room-offers .offers-details .offers-pictos .pictos-details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-offers .container-offers .offers .room-offers .offers-details .offers-pictos .pictos-details .pictos-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.section-offers .container-offers .offers .room-offers .offers-details .offers-pictos .pictos-details .pictos-column .pictos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.section-offers .container-offers .offers .room-offers .offers-details .offers-pictos .more-details {
+  font-size: 0.9375rem;
+  color: #4F6234;
+}
+.section-offers .container-offers .offers .room-offers .offers-details .price {
+  font-family: "karla-bold";
 }
 
 /*# sourceMappingURL=styles.css.map */

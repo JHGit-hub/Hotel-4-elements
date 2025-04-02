@@ -1,0 +1,57 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+// section offers
+
+.section-offers{
+    @include display-flex(row, center, center);
+    .container-offers{
+        @include display-flex(column, center, stretch);
+        gap:4.25rem;
+        .offers{
+            @include display-flex(row, space-between, flex-start);
+            .room-offers{
+                height:100%;
+                @include display-flex(column, center, stretch);
+                gap:4.25rem;
+                .offers-img{
+                    width:100%;
+                    max-height:432px;
+                    overflow: hidden;
+                }
+                .offers-details{
+                    @include display-flex(column, center, stretch);
+                    gap:1.56rem;
+                    .offers-pictos{
+                        @include display-flex(column, center, start);
+                        gap:2rem;
+                        .pictos-details{
+                            width:100%;
+                            @include display-flex(row, space-between, center);
+                            .pictos-column{
+                                @include display-flex(column, center, start);
+                                gap:1rem;
+                                .pictos{
+                                    @include display-flex(row, center, center);
+                                    gap:1rem;
+                                }
+                            } 
+                        }
+                        .more-details{
+                            font-size: 0.9375rem;
+                            color: $secondary-color;
+                        }
+                    }
+                    .price{
+                        font-family: "karla-bold";
+
+                    }
+                }
+            } 
+        }
+    }
+}
+
+// section options
+

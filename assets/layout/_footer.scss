@@ -2,3 +2,53 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/variables' as *;
 
+
+footer{
+    background-color: #ffffff;
+    padding:2.7rem;
+    @include display-flex(row, center, center);                  
+    .container-footer{
+        width:88%;
+        @include display-flex(row, space-between, center);
+        .footer-social{
+            @include display-flex(column, space-between, start);
+            gap:2rem;
+            .logo-footer{
+                width:192px;
+                height:64px;
+                img{
+                    width:100%;
+                }
+            }
+            .social-pictos{
+                @include display-flex(row, space-between, start);
+                gap:1rem;
+            }
+        }
+        .footer-contact{
+            @include display-flex(column, space-between, start);
+            gap:2rem;
+            h4{
+                font-size: 1.25rem;
+                text-transform: capitalize;
+            }
+            p{
+                text-transform: capitalize;
+                .span-contact{
+                    font-family: 'karla-bold';
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .footer-credits{
+            @include display-flex(column, space-between, start);
+            gap:2rem;
+            p{
+                font-family: 'karla-bold';
+                text-transform: capitalize;
+                font-size: 0.93rem;
+            }
+        }
+        
+    }
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotel Feu</title>
     <link rel="icon" type="image/png" href="../favicon.png">
     <meta name="description" content="Découvrez l'hôtel Feu du groupe 4 Éléments, dans un lieux insolites à l'écart du tourisme de masse. Vivez une expérience unique et authentique.">
     <link rel="stylesheet" href="../fonts/styles.css">
@@ -29,11 +29,11 @@
             </div>
             <div class="header-contact">
                 <div class="social-desktop">
-                    <lu>
+                    <ul>
                         <li><a href="#" title="Contactez le groupe d'hôtels 4 Élements">contact</a></li>
                         <li><a href="#" title="Visitez la page Instagram du groupe d'hôtels 4 Élements"><img src="../assets/images/icons/instagram.svg"></a></li>
                         <li><a href="#" title="Visitez la page Facebook du groupe d'hôtels 4 Élements"><img src="../assets/images/icons/facebook.svg"></a></li>
-                    </lu>
+                    </ul>
                 </div>
                 <div class="CTA">
                     <div class="secondary-btn">
@@ -64,21 +64,21 @@
             <div class="container">
                 <div class="row">
                     <article>
-                        <div class="article-hotel-feu"> <!-- hotel feu -->
-                            <div class="presentation">
+                        <div class="article-hotel"> <!-- hotel feu -->
+                            <div class="presentation block">
                                 <div class="title">
-                                    <h2>hôtel feu</h2>
+                                    <h2>Hôtel Feu</h2>
                                     <div class="localisation-rate"> <!-- localisation et rating -->
                                         <div class="localisation">
-                                            <img src="../assets/icons/map-pin.svg" alt="Emplacement de l'hotel feu en Finlande du groupe 4 Élements">
-                                            <p>finlande</p>
+                                            <img src="../assets/images/icons/map-pin.svg" alt="Emplacement de l'hotel feu en Finlande du groupe 4 Élements">
+                                            <p>Finlande</p>
                                         </div>
                                         <div class="rate">
-                                            <div class="stars"></div>
-                                                <img src="../assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-                                                <img src="../assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-                                                <img src="../assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-                                                <img src="../assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+                                            <div class="stars">
+                                                <img src="../assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                                <img src="../assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                                <img src="../assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                                <img src="../assets/images/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
                                             </div>
                                             <p>(325 avis)</p>
                                         </div>
@@ -93,39 +93,45 @@
                                     votre chambre.
                                 </p>
                                 <div class="primary-btn">
-                                    <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+                                    <a href="formulaire.html" title="Réservez votre séjour dans l' hôtel Feu du groupe 4 Élements">reserver</a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="carrousel" id="carrouselBtn"> <!-- carrousel de photo de l'hotel / gestion en JS -->
-                            <div class="slide " id="slide1">
-                                <div class="overflow">
-                                    <img src="../assets/images/igloos-hotel-feu.jpg" alt="photo des chambres igloos de l'hotel feu du groupe 4 Élements">
+                            </div>						
+                            <div class="carrousel block" id="carrouselBtnFeu"> <!-- carrousel de photo de l'hotel / gestion en JS -->
+                                <div class="carrousel-slideFeu">
+                                    <div class="slide " id="slideFeu1">
+                                        <div class="overflow">
+                                            <img src="../assets/images/igloos-hotel-feu.jpg" alt="photo des chambres igloos de l'hotel feu du groupe 4 Élements">
+                                        </div>
+                                        <div class="dot"> <!-- ajout de points pour inciter au defilement du carrousel -->
+                                            <img src="../assets/images/icons/dark-dot.png">
+                                            <img src="../assets/images/icons/white-dot.png">
+                                            <img src="../assets/images/icons/white-dot.png">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="dot"> <!-- ajout de points pour inciter au defilement du carrousel -->
-                                    <img src="../assets/images/icons/dark-dot.png">
-                                    <img src="../assets/images/icons/white-dot.png">
-                                    <img src="../assets/images/icons/white-dot.png">
+                                <div class="carrousel-slideFeu hidden">
+                                    <div class="slide" id="slideFeu2">
+                                        <div class="overflow">
+                                            <img src="../assets/images/suite-laponne-hotel-feu.jpg" alt="photo de la suite laponne de l'hotel feu du groupe 4 Élements">
+                                        </div>
+                                        <div class="dot">
+                                            <img src="../assets/images/icons/white-dot.png">
+                                            <img src="../assets/images/icons/dark-dot.png">
+                                            <img src="../assets/images/icons/white-dot.png">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="slide hidden" id="slide2">
-                                <div class="overflow">
-                                    <img src="assets/images/suite-laponne-hotel-feu.jpg" alt="photo de la suite laponne de l'hotel feu du groupe 4 Élements">
-                                </div>
-                                <div class="dot">
-                                    <img src="../assets/images/icons/white-dot.png">
-                                    <img src="../assets/images/icons/dark-dot.png">
-                                    <img src="../assets/images/icons/white-dot.png">
-                                </div>
-                            </div>
-                            <div class="slide hidden" id="slide3">
-                                <div class="overflow">
-                                    <img src="../assets/images/vue-ciel-hotel-feu.jpg" alt="photo vue du ciel de l'hotel feu du groupe 4 Élements">
-                                </div>
-                                <div class="dot">
-                                    <img src="../assets/images/icons/white-dot.png">
-                                    <img src="../assets/images/icons/white-dot.png">
-                                    <img src="../assets/images/icons/dark-dot.png">
+                                <div class="carrousel-slideFeu hidden">
+                                    <div class="slide" id="slideFeu3">
+                                        <div class="overflow">
+                                            <img src="../assets/images/vue-ciel-hotel-feu.jpg" alt="photo vue du ciel de l'hotel feu du groupe 4 Élements">
+                                        </div>
+                                        <div class="dot">
+                                            <img src="../assets/images/icons/white-dot.png">
+                                            <img src="../assets/images/icons/white-dot.png">
+                                            <img src="../assets/images/icons/dark-dot.png">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -133,125 +139,127 @@
                 </div>
             </div>
         </section>
-        <section class="offers"> <!-- presentation des offres de l'hotel Feu -->
+        <section class="section-offers"> <!-- presentation des offres de l'hotel Feu -->
             <div class="container">
                 <article>
-                    <h3>les offres de l'hôtel feu</h3>
-                    <div class="offers">
-                        <div class="block"> <!-- chambre igloo -->
-                            <div class="offers-img">
-                                <img src="../assets/images/vue-ciel-hotel-feu.jpg" alt="photo vue du ciel de l'hotel feu du groupe 4 Élements">
-                            </div>
-                            <div class="offers-details">
-                                <h4>Découvrez nos igloos et voyagez<br>
-                                    le temps d'une nuit
-                                </h4>
-                                <p>Plongez-vous dans une nuit magique où le temps<br>
-                                    semble suspendu. Nos igloos offrent une atmosphère<br>
-                                    chaleureuse et dépaysante, vous invitant à vivre une<br>
-                                    aventure hors du commun. Chaque détail a été <br>
-                                    oigneusement pensé pour créer une escapade<br>
-                                    mémorable. Profitez de l'intimité et du confort de nos<br>
-                                    hébergements glacés tout en vous laissant<br>
-                                    imprégner par la beauté éphémère de cet<br>
-                                    environnement. Offrez-vous une nuit inoubliable dans<br>
-                                    nos igloos, une expérience qui restera gravée dans<br>
-                                    vos souvenirs.
-                                </p>
-                                <div class="offers-picto"> <!-- differentes options de la chambre igloo -->
-                                    <div class="picto-details">
-                                        <div class="pictos-column">
-                                            <div class="pictos">
-                                                <img src="../assets/images/icons/sparkle.svg" alt="icone du SPA">
-                                                <p>spa</p>
+                    <div class="container-offers">
+                        <h3>Les offres de l'hôtel feu</h3>
+                        <div class="offers">
+                            <div class="room-offers block"> <!-- chambre igloo -->
+                                <div class="offers-img">
+                                    <img src="../assets/images/vue-ciel-hotel-feu.jpg" alt="photo vue du ciel de l'hotel feu du groupe 4 Élements">
+                                </div>
+                                <div class="offers-details">
+                                    <h4>Découvrez nos igloos et voyagez<br>
+                                        le temps d'une nuit
+                                    </h4>
+                                    <p>Plongez-vous dans une nuit magique où le temps<br>
+                                        semble suspendu. Nos igloos offrent une atmosphère<br>
+                                        chaleureuse et dépaysante, vous invitant à vivre une<br>
+                                        aventure hors du commun. Chaque détail a été <br>
+                                        oigneusement pensé pour créer une escapade<br>
+                                        mémorable. Profitez de l'intimité et du confort de nos<br>
+                                        hébergements glacés tout en vous laissant<br>
+                                        imprégner par la beauté éphémère de cet<br>
+                                        environnement. Offrez-vous une nuit inoubliable dans<br>
+                                        nos igloos, une expérience qui restera gravée dans<br>
+                                        vos souvenirs.
+                                    </p>
+                                    <div class="offers-pictos"> <!-- differentes options de la chambre igloo -->
+                                        <div class="pictos-details">
+                                            <div class="pictos-column">
+                                                <div class="pictos">
+                                                    <img src="../assets/images/icons/sparkle.svg" alt="icone du SPA">
+                                                    <p>spa</p>
+                                                </div>
+                                                <div class="pictos">
+                                                    <img src="../assets/images/icons/car.svg" alt="icone du parking">
+                                                    <p>parking</p>
+                                                </div>
+                                                <div class="pictos">
+                                                    <img src="../assets/images/icons/snowflake.svg" alt="icone de la climatisation">
+                                                    <p>climatisation</p>
+                                                </div>
                                             </div>
-                                            <div class="pictos">
-                                                <img src="../assets/images/icons/car.svg" alt="icone du parking">
-                                                <p>parking</p>
-                                            </div>
-                                            <div class="pictos">
-                                                <img src="../assets/images/icons/snowflake.svg" alt="icone de la climatisation">
-                                                <p>climatisation</p>
+                                            <div class="pictos-column">
+                                                <div class="pictos">
+                                                    <img src="../assets/images/icons/swimming-pool.svg" alt="icone de la piscine">
+                                                    <p>piscine</p>
+                                                </div>
+                                                <div class="pictos">
+                                                    <img src="../assets/images/icons/barbell.svg" alt="icone des haltéres">
+                                                    <p>salle de sport</p>
+                                                </div>
+                                                <div class="pictos">
+                                                    <img src="../assets/images/icons/bus.svg" alt="icone des transports en commun">
+                                                    <p>transport aéroport</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="pictos-column">
-                                            <div class="pictos">
-                                                <img src="../assets/images/icons/swimming-pool.svg" alt="icone de la piscine">
-                                                <p>piscine</p>
-                                            </div>
-                                            <div class="pictos">
-                                                <img src="../assets/images/icons/barbell.svg" alt="icone des haltéres">
-                                                <p>salle de sport</p>
-                                            </div>
-                                            <div class="pictos">
-                                                <img src="../assets/images/icons/bus.svg" alt="icone des transports en commun">
-                                                <p>transport aéroport</p>
-                                            </div>
-                                        </div>
+                                        <p>+ de details</p>
                                     </div>
-                                    <p>+ de details</p>
-                                </div>
-                                <p>à partir de <span class="price">500€ / nuit</span></p>
-                                <div class="primary-btn">
-                                    <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block"> <!-- suite laponne -->
-                            <div class="offers-img">
-                                <img src="../assets/images/interieur-suite-laponne-hotel-feu.jpg" alt="photo de l'interieur de la suite laponne de l'hotel feu du groupe 4 Élements">
-                            </div>
-                            <div class="offers-details">
-                                <h4>Découvrez la suite Laponie et<br>
-                                    voyagez le temps d'une nuit
-                                </h4>
-                                <p>Voyagez le temps d'une nuit à travers un<br>
-                                    hébergement exceptionnel qui évoque la magie et<br>
-                                    l'authenticité de la Laponie. La suite offre un mélange<br>
-                                    enchanteur de confort luxueux et d'éléments inspirés<br>
-                                    de la nature environnante. Imprégnez-vous de<br>
-                                    l'atmosphère enchanteresse de la Laponie tout en<br>
-                                    profitant du luxe et de l'intimité de notre suite.<br>
-                                    Offrez-vous une nuit extraordinaire dans la suite Laponie<br>
-                                    de l'hôtel Feu, où chaque moment promet d'être magique<br>
-                                    et mémorable.
-                                </p>
-                                <div class="offers-picto"> <!-- differentes options de la suite Laponne -->
-                                    <div class="picto-details">
-                                        <div class="pictos-column">
-                                            <div class="pictos">
-                                                <img src="../assets/images/icons/sparkle.svg" alt="icone du SPA">
-                                                <p>spa</p>
-                                            </div>
-                                            <div class="pictos">
-                                                <img src="../assets/images/icons/car.svg" alt="icone du parking">
-                                                <p>parking</p>
-                                            </div>
-                                            <div class="pictos">
-                                                <img src="../assets/images/icons/snowflake.svg" alt="icone de la climatisation">
-                                                <p>climatisation</p>
-                                            </div>
-                                        </div>
-                                        <div class="pictos-column">
-                                            <div class="pictos">
-                                                <img src="../assets/images/icons/swimming-pool.svg" alt="icone de la piscine">
-                                                <p>piscine</p>
-                                            </div>
-                                            <div class="pictos">
-                                                <img src="../assets/images/icons/barbell.svg" alt="icone des haltéres">
-                                                <p>salle de sport</p>
-                                            </div>
-                                            <div class="pictos">
-                                                <img src="../assets/images/icons/bus.svg" alt="icone des transports en commun">
-                                                <p>transport aéroport</p>
-                                            </div>
-                                        </div>
+                                    <p>à partir de <span class="price">500€ / nuit</span></p>
+                                    <div class="primary-btn">
+                                        <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
                                     </div>
-                                    <p>+ de details</p>
                                 </div>
-                                <p>à partir de <span class="price">850€ / nuit</span></p>
-                                <div class="primary-btn">
-                                    <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+                            </div>
+                            <div class="room-offers block"> <!-- suite laponne -->
+                                <div class="offers-img">
+                                    <img src="../assets/images/interieur-suite-laponne-hotel-feu.jpg" alt="photo de l'interieur de la suite laponne de l'hotel feu du groupe 4 Élements">
+                                </div>
+                                <div class="offers-details">
+                                    <h4>Découvrez la suite Laponie et<br>
+                                        voyagez le temps d'une nuit
+                                    </h4>
+                                    <p>Voyagez le temps d'une nuit à travers un<br>
+                                        hébergement exceptionnel qui évoque la magie et<br>
+                                        l'authenticité de la Laponie. La suite offre un mélange<br>
+                                        enchanteur de confort luxueux et d'éléments inspirés<br>
+                                        de la nature environnante. Imprégnez-vous de<br>
+                                        l'atmosphère enchanteresse de la Laponie tout en<br>
+                                        profitant du luxe et de l'intimité de notre suite.<br>
+                                        Offrez-vous une nuit extraordinaire dans la suite Laponie<br>
+                                        de l'hôtel Feu, où chaque moment promet d'être magique<br>
+                                        et mémorable.
+                                    </p>
+                                    <div class="offers-pictos"> <!-- differentes options de la suite Laponne -->
+                                        <div class="pictos-details">
+                                            <div class="pictos-column">
+                                                <div class="pictos">
+                                                    <img src="../assets/images/icons/sparkle.svg" alt="icone du SPA">
+                                                    <p>spa</p>
+                                                </div>
+                                                <div class="pictos">
+                                                    <img src="../assets/images/icons/car.svg" alt="icone du parking">
+                                                    <p>parking</p>
+                                                </div>
+                                                <div class="pictos">
+                                                    <img src="../assets/images/icons/snowflake.svg" alt="icone de la climatisation">
+                                                    <p>climatisation</p>
+                                                </div>
+                                            </div>
+                                            <div class="pictos-column">
+                                                <div class="pictos">
+                                                    <img src="../assets/images/icons/swimming-pool.svg" alt="icone de la piscine">
+                                                    <p>piscine</p>
+                                                </div>
+                                                <div class="pictos">
+                                                    <img src="../assets/images/icons/barbell.svg" alt="icone des haltéres">
+                                                    <p>salle de sport</p>
+                                                </div>
+                                                <div class="pictos">
+                                                    <img src="../assets/images/icons/bus.svg" alt="icone des transports en commun">
+                                                    <p>transport aéroport</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="more-details">+ de details</p>
+                                    </div>
+                                    <p>à partir de <span class="price">850€ / nuit</span></p>
+                                    <div class="primary-btn">
+                                        <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -368,10 +376,10 @@
                             <h5>avy johnson</h5>
                             <div class="testimonials-rating">
                                 <div class="stars">
-                                    <img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-                                    <img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-                                    <img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-                                    <img src="assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+                                    <img src="../assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                    <img src="../assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                    <img src="../assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                    <img src="../assets/images/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
                                 </div>
                                 <p>(4,5/5)</p>
                             </div>
@@ -394,10 +402,10 @@
                             <h5>thomas capello</h5>
                             <div class="testimonials-rating">
                                 <div class="stars">
-                                    <img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-                                    <img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-                                    <img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-                                    <img src="assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+                                    <img src="../assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                    <img src="../assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                    <img src="../assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+                                    <img src="../assets/images/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
                                 </div>
                                 <p>(4,5/5)</p>
                             </div>
