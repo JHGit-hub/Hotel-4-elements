@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <meta name="description" content="Découvrez l'hôtel Feu du groupe 4 Éléments, dans un lieux insolites à l'écart du tourisme de masse. Vivez une expérience unique et authentique.">
+    <link rel="stylesheet" href="../fonts/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-desktop"> <!-- header du desktop -->
+            <div class="menu">
+                <div class="logo">
+                    <a href="../index.html" title="retour à la page d'accueil du site des hôtels du groupe 4 Éléments">
+                        <img src="../assets/images/logo/logo-noir-4-elements.png" alt="logo du groupe d'hôtels 4 Élements">
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="hotel-feu.html" title="Hotel Feu du groupe 4 Élements">Feu</a></li>
+                        <li><a href="#" title="Hotel Air du groupe d'hôtels 4 Élements">Air</a></li>
+                        <li><a href="#" title="Hotel Terre du groupe d'hôtels 4 Élements">Terre</a></li>
+                        <li><a href="#" title="Hotel Feu du groupe d'hôtels 4 Élements">Eau</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-contact">
+                <div class="social-desktop">
+                    <lu>
+                        <li><a href="#" title="Contactez le groupe d'hôtels 4 Élements">contact</a></li>
+                        <li><a href="#" title="Visitez la page Instagram du groupe d'hôtels 4 Élements"><img src="../assets/images/icons/instagram.svg"></a></li>
+                        <li><a href="#" title="Visitez la page Facebook du groupe d'hôtels 4 Élements"><img src="../assets/images/icons/facebook.svg"></a></li>
+                    </lu>
+                </div>
+                <div class="CTA">
+                    <div class="secondary-btn">
+                        <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
+                    </div>
+                    <div class="login">
+                        <a href="#" title="Connectez vous à votre compte du groupe d'hôtels 4 Élements">se connecter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobil"> <!-- header du mobil -->
+            <div class="menu-burger">
+                <div class="burger">
+                    <a href="#" title="Menu du site mobil du groupe d'hôtels 4 Élements"><img src="../assets/images/icons/burger.svg"></a> 
+                </div>
+                <div class="social-mobil">
+                    <ul>
+                        <li><a href="#" title="Visitez la page Instagram du groupe d'hôtels 4 Élements"><img src="../assets/images/icons/instagram-white.svg" alt="icone du lien pour la page instagram des hotels du groupe 4 Élements"></a></li>
+                        <li><a href="#" title="Visitez la page Facebook du groupe d'hôtels 4 Élements"><img src="../assets/images/icons/facebook-white.svg"  alt="icone du lien pour la page facebook des hotels du groupe 4 Élements"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-formulaire"> <!-- formulaire de reservation -->
+            <div class="container-fluid">
+                <h2>bienvenu sur notre page de réseervation</h2>
+                <div class="form">
+                    <form>
+                        <div class="formulaire-identification"> <!-- identité du visiteur -->
+                            <div class="name">
+                                <div class="surname">
+                                    <label for="surname">Nom: </label>
+                                    <input type="text" id="surname" name="surname" placeholder="Entrez votre Nom">
+                                </div>
+                                <div class="firstname">
+                                    <label for="firstname">Prénom: </label>
+                                    <input type="text" id="firstname" name="firstname" placeholder="Entrez votre Prénom">
+                                </div>
+                            </div>
+                            <div class="adresse">
+                                <div class="street-nbr">
+                                    <label for="streetNbr">N° </label>
+                                    <input type="number" id="streetNbr" name="streetNbr">
+                                </div>
+                                <div class="street-name">
+                                    <label for="streetName">Nom de la rue: </label>
+                                    <input type="text" id="streetName" name="streetName" placeholder="Nom de rue">
+                                </div>
+                            </div>
+                            <div class="city">
+                                <div class="city-code">
+                                    <label for="code">Code postal: </label>
+                                    <input type="number" id="code" name="code">
+                                </div>
+                                <div class="city-name">
+                                    <label for="cityName">Ville: </label>
+                                    <input type="text" id="cityName" name="cityName" placeholder="Nom de la ville">
+                                </div>
+                            </div>
+                            <div class="email">
+                                <label for="email">Email: </label>
+                                <input type="text" name="email" id="email">
+                            </div>
+                            <div class="phone">
+                                <label for="phone">Téléphone: </label>
+                                <input type="number" name="phone" id="phone">
+                            </div>
+                        </div>
+                        <div class="formulaire-reservation"> <!-- reservation -->
+                            <div class="hotel">
+                                <label for="hotel">choix de l'hôtel:</label>
+                                <select name="hotel" id="hotel">
+                                    <option value="hotel eau">Hôtel Eau</option>
+                                    <option value="hotel air">Hôtel Air</option>
+                                    <option value="hotel feu">Hôtel Feu</option>
+                                    <option value="hotel teu">Hôtel Terre</option>
+                                </select>
+                            </div>
+                            <div class="reservation">
+                                <div class="room">
+                                    <label for="room">Choix de la chambre: </label>
+                                    <div><input type="radio" name="room" id="room" value="igloo">Chambre Igloo</div>
+                                    <div><input type="radio" name="room" id="room" value="suite">Suite Laponne</div>
+                                </div>
+                                <div class="nbr-visitors">
+                                    <label for="visitors">Nombre de personnes</label>
+                                    <input type="number" name="visitors" id="visitors">
+                                </div>
+                            </div>
+                            <div class="journey">
+                                <div class="arrivee">
+                                    <label for="arrivee">Date d'arrivée: </label>
+                                    <input type="date" id="arrivee" name="arrivee">
+                                </div>
+                                <div class="depart">
+                                    <label for="depart">Date de départ: </label>
+                                    <input type="date" id="depart" name="depart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formulaire-options"> <!-- options de reservations-->
+                            <div class="check-options">
+                                <label for="driver">
+                                    <input type="checkbox" name="driver" id="driver" value="oui">Chauffeur
+                                </label>
+                            </div>
+                            <div class="check-options">
+                                <label for="visit">
+                                    <input type="checkbox" name="visit" id="visit" value="oui">Visite
+                                </label>
+                            </div>
+                            <div class="check-options">
+                                <label for="breackfast">
+                                    <input type="checkbox" name="breackfeast" id="breackfeast" value="oui">Petit Déjeuner
+                                </label>
+                            </div>
+                            <div class="check-options">
+                                <label for="lunch">
+                                    <input type="checkbox" name="lunch" id="lunch" value="oui">Déjeuner
+                                </label>
+                            </div>
+                            <div class="check-options">
+                                <label for="diner">
+                                    <input type="checkbox" name="diner" id="diner" value="oui">Dîner
+                                </label>
+                            </div>
+                            <div class="check-options">
+                                <label for="ponctual">
+                                    <input type="checkbox" name="ponctual" id="ponctual" value="oui">Ponctuel
+                                </label>
+                            </div>
+                            <div class="check-options">
+                                <label for="restriction">
+                                    <input type="checkbox" name="restriction" id="restriction" value="oui">Restriction alimentaire
+                                </label>
+                            </div>
+                            <div class="check-options">
+                                <label for="diet">
+                                    <input type="checkbox" name="diet" id="diet" value="oui">Régime alimentaire
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit" id="submit">Valider</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-social">
+                <div class="logo-footer">
+                    <img src="../assets/images/logo/logo-noir-4-elements.png" alt="logo du groupe 4 Élements">
+                </div>
+                <p>N'attendez plus pour vivre l'expérience 4<br>
+                    éléments le temps d'une nuit.
+                </p>
+                <div class="social-footer">
+                    <img src="../assets/images/icons/instagram.svg"  alt="icone du lien pour la page instagram des hotels du groupe 4 Élements">
+                    <img src="../assets/images/icons/facebook.svg"  alt="icone du lien pour la page facebook des hotels du groupe 4 Élements">
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>contact</p>
+                <div class="adresse-footer">
+                    <p><span class="span-contact">adresse:</span>8 avenue exemple</p>
+                    <p><span class="span-contact">ouverture:</span>tous les jours de 9h à 20h30</p>
+                    <p><span class="span-contact">tèlèphone:</span>33 08 280 28002</p>
+                </div>
+                <div class="secondary-btn">
+                    <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver en ligne</a>
+                </div>
+            </div>
+            <div class="footer-credits">
+                <p>mentions légales</p>
+                <p>crédits</p>
+                <p>CGV</p>
+                <p>confidentialité</p>
+                <p>Design by J.Hardy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../script.js"></script>
+</html>
