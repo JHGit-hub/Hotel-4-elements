@@ -55,3 +55,170 @@
 
 // section options
 
+.section-options{
+    .container-fluid{
+        height:auto;
+    }
+}
+
+.options{
+    @include display-flex(column, center, stretch);
+    gap:2rem;
+    .title-options{
+        @include display-flex(column, start, flex-start);
+        gap:1rem;
+        margin-left:2rem;
+    }
+    .carrousel-options{
+        @include display-flex(row, center, center);
+        gap: 4rem;
+        overflow: hidden;
+        .slide{
+            position:relative;
+            max-height:350px;
+            max-width: 488px;
+            overflow: hidden;
+            img{
+                max-width:120%;
+                height:auto;
+                margin:auto;
+                filter: brightness(70%);
+            }
+            .slide-description{
+                @include display-flex(column, center, flex-end);
+                position:absolute;
+                bottom:1%;
+                right:1%;
+                h4, p, h5{
+                    color:#E5E0DC;
+                }
+            }
+        }
+    }
+}
+
+// section activity
+
+.section-activity{
+    .container-fluid{
+        height:auto;
+    }
+}
+
+.activity{
+    @include display-flex(column, center, stretch);
+    gap:2rem;
+    .title-activity{
+        @include display-flex(column, start, flex-start);
+        gap:1rem;
+        margin-left:2rem;
+    }
+    .carrousel-activity{
+        @include display-flex(row, center, center);
+        gap: 4rem;
+        overflow: hidden;
+        .slide{
+            position:relative;
+            max-height:350px;
+            max-width: 488px;
+            overflow: hidden;
+            img{
+                max-width:120%;
+                height:auto;
+                margin:auto;
+                filter: brightness(70%);
+            }
+            .slide-description{
+                @include display-flex(column, center, flex-end);
+                position:absolute;
+                bottom:1%;
+                right:1%;
+                h4, p, h5{
+                    color:#E5E0DC;
+                }
+            }
+        }
+    }
+}
+
+
+// section video
+
+.container-fluid{
+    width:100vw;
+    position:relative;
+    height:auto;
+    .video-hotel{
+        width:100%;
+       video{
+            width:100%;
+        }
+    }
+}
+
+// section testimonials
+
+.section-testimonials{
+    @include display-flex(row, center, center);
+    gap:2rem;
+    .testimonials{
+        @include display-flex(column, space-between, stretch);
+        gap:2rem;
+        .card-testimonials{
+            @include display-flex(column, space-between, flex-start);
+            gap:2rem;
+            .identity-profil{
+                @include display-flex(row, center, start);
+                gap:1rem;
+                .identification{
+                    @include display-flex(column, center, start);
+                    gap:1rem;
+                    .testimonials-rating{
+                        @include display-flex(row, center, center);
+                        gap:1rem;  
+                    }
+                }
+            }
+            h5{
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+// section informations
+
+.section-informations{
+    @include display-flex(row, center, center);
+    gap:2rem;
+    margin-bottom:8.4rem;
+    .container-informations{
+        @include display-flex(column, space-between, stretch);
+        gap:2rem;
+        .informations{
+            @include display-flex(row, space-between, stretch);
+            .column{
+                @include display-flex(column, space-between, stretch);
+                gap:1rem;
+            }
+            .information-card{
+                @include display-flex(row, flex-start, flex-start);
+                gap:1rem;
+                h5{
+                    text-transform: capitalize
+                }
+                .informations-item-row{
+                    @include display-flex(row, space-between, center); 
+                    gap:2rem;  
+                }
+            }
+        }
+    }
+    .informations-contact{
+        @include display-flex(column, space-between, flex-start);
+        gap:2rem;
+        h3{
+            text-transform: capitalize;
+        }
+    }
+}

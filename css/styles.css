@@ -244,6 +244,7 @@ footer .container-footer .footer-credits p {
   border-radius: 6px;
   width: 180px;
   height: 50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .primary-btn a {
   color: #ffffff;
@@ -256,6 +257,7 @@ footer .container-footer .footer-credits p {
   background-color: #4F6234;
   padding: 0.4375rem 0.875rem;
   border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .secondary-btn a {
   text-decoration: none;
@@ -272,6 +274,7 @@ footer .container-footer .footer-credits p {
 }
 .container-fluid .video-banner video {
   width: 100%;
+  filter: brightness(80%);
 }
 .container-fluid .title {
   position: absolute;
@@ -291,6 +294,7 @@ footer .container-footer .footer-credits p {
   background-color: #d9c7b3;
   border-radius: 18px;
   width: 51.45%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .container-fluid .article-form form {
   width: 100%;
@@ -331,6 +335,7 @@ footer .container-footer .footer-credits p {
   position: absolute;
   bottom: 1%;
   left: 45%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .section-presentation {
@@ -514,6 +519,224 @@ footer .container-footer .footer-credits p {
 }
 .section-offers .container-offers .offers .room-offers .offers-details .price {
   font-family: "karla-bold";
+}
+
+.section-options .container-fluid {
+  height: auto;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+.options .title-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+.options .carrousel-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  overflow: hidden;
+}
+.options .carrousel-options .slide {
+  position: relative;
+  max-height: 350px;
+  max-width: 488px;
+  overflow: hidden;
+}
+.options .carrousel-options .slide img {
+  max-width: 120%;
+  height: auto;
+  margin: auto;
+  filter: brightness(70%);
+}
+.options .carrousel-options .slide .slide-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+}
+.options .carrousel-options .slide .slide-description h4, .options .carrousel-options .slide .slide-description p, .options .carrousel-options .slide .slide-description h5 {
+  color: #E5E0DC;
+}
+
+.section-activity .container-fluid {
+  height: auto;
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+.activity .title-activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+.activity .carrousel-activity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  overflow: hidden;
+}
+.activity .carrousel-activity .slide {
+  position: relative;
+  max-height: 350px;
+  max-width: 488px;
+  overflow: hidden;
+}
+.activity .carrousel-activity .slide img {
+  max-width: 120%;
+  height: auto;
+  margin: auto;
+  filter: brightness(70%);
+}
+.activity .carrousel-activity .slide .slide-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+}
+.activity .carrousel-activity .slide .slide-description h4, .activity .carrousel-activity .slide .slide-description p, .activity .carrousel-activity .slide .slide-description h5 {
+  color: #E5E0DC;
+}
+
+.container-fluid {
+  width: 100vw;
+  position: relative;
+  height: auto;
+}
+.container-fluid .video-hotel {
+  width: 100%;
+}
+.container-fluid .video-hotel video {
+  width: 100%;
+}
+
+.section-testimonials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.section-testimonials .testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+}
+.section-testimonials .testimonials .card-testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.section-testimonials .testimonials .card-testimonials .identity-profil {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.section-testimonials .testimonials .card-testimonials .identity-profil .identification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.section-testimonials .testimonials .card-testimonials .identity-profil .identification .testimonials-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.section-testimonials .testimonials .card-testimonials h5 {
+  text-transform: capitalize;
+}
+
+.section-informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 8.4rem;
+}
+.section-informations .container-informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+}
+.section-informations .container-informations .informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.section-informations .container-informations .informations .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+}
+.section-informations .container-informations .informations .information-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.section-informations .container-informations .informations .information-card h5 {
+  text-transform: capitalize;
+}
+.section-informations .container-informations .informations .information-card .informations-item-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.section-informations .informations-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.section-informations .informations-contact h3 {
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=styles.css.map */
