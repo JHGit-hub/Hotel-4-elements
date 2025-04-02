@@ -1,0 +1,31 @@
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/variables' as *;
+
+
+.section-formulaire{
+    position:relative;
+}
+
+.modal{
+    @include display-flex(column, center, center);
+    position:absolute;
+    padding: 1.875rem 3.75rem;
+    background-color: $tertiary-color;
+    border-radius: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    color: $primary-color;
+    gap:2rem;
+    .modal-btn{
+        width:100%;
+        @include display-flex(row, space-between, center);
+    }
+}
+
+.hidden{
+    display:none;
+}
+
+.blur{
+    filter: blur(10px);
+}

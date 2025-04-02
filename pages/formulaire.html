@@ -64,7 +64,7 @@
             <div class="container formulaire">
                 <h3>Bienvenu sur notre page de réservation</h3>
                 <div class="form">
-                    <form>
+                    <form id="form">
                         <div class="formulaire-identification"> <!-- identité du visiteur -->
                             <div class="form-style">
                                 <div class="form-style">
@@ -140,49 +140,49 @@
                         <div class="formulaire-options"> <!-- options de reservations-->
                             <div class="check-options">
                                 <label for="driver">
-                                    <input type="checkbox" name="driver" id="driver" value="oui">Chauffeur
+                                    <input type="checkbox" name="driver" id="driver" value="oui"> Chauffeur (11€ / jour)
                                 </label>
                             </div>
                             <div class="check-options">
                                 <label for="visit">
-                                    <input type="checkbox" name="visit" id="visit" value="oui">Visite
+                                    <input type="checkbox" name="visit" id="visit" value="oui"> Visite (20€)
                                 </label>
                             </div>
                             <div class="check-options">
                                 <label for="breackfast">
-                                    <input type="checkbox" name="breackfeast" id="breackfeast" value="oui">Petit Déjeuner
+                                    <input type="checkbox" name="breackfast" id="breackfast" value="oui"> Petit Déjeuner (15€ / personnes / jour)
                                 </label>
                             </div>
                             <div class="check-options">
                                 <label for="lunch">
-                                    <input type="checkbox" name="lunch" id="lunch" value="oui">Déjeuner
+                                    <input type="checkbox" name="lunch" id="lunch" value="oui"> Déjeuner (25€ / personnes / repas)
                                 </label>
                             </div>
                             <div class="check-options">
                                 <label for="diner">
-                                    <input type="checkbox" name="diner" id="diner" value="oui">Dîner
+                                    <input type="checkbox" name="diner" id="diner" value="oui"> Dîner (25€ / personnes / repas)
                                 </label>
                             </div>
                             <div class="check-options">
                                 <label for="unresereved">
-                                    <input type="checkbox" name="unresereved" id="unresereved" value="oui">Sans réservation
+                                    <input type="checkbox" name="unresereved" id="unresereved" value="oui"> Sans réservation (payement sur place, prévenir la veille)
                                 </label>
                             </div>
-                            <div class="RestrictionSection" id="RestrictionSection">
+                            <div class="restrictionSection hidden" id="restrictionSection">
                                 <h5>Choisissez votre régime alimentaire</h5>
-                                <div class="RestrictionSection">
+                                <div class="restrictionSection">
                                     <div class="radio">
-                                        <input type="radio" name="Restriction" id="RestrictionGluten" value="gluten"> Sans Gluten
+                                        <input type="radio" name="restriction" id="restrictionGluten" value="gluten"> Sans Gluten
                                     </div>
                                     <div class="radio">
-                                        <input type="radio" name="Restriction" id="RestrictionLactose" value="lactose"> Sans Lactose
+                                        <input type="radio" name="restriction" id="restrictionLactose" value="lactose"> Sans Lactose
                                     </div>
                                     <div class="radio">
-                                        <input type="radio" name="Restriction" id="RestrictionOther" value="other"> Autres allergies ou intolérances
+                                        <input type="radio" name="restriction" id="restrictionOther" value="other"> Autres allergies ou intolérances
                                     </div>
                                 </div>
                             </div>
-                            <div class="dietSection" id="dietSection">
+                            <div class="dietSection hidden" id="dietSection">
                                 <h5>Choisissez votre régime alimentaire</h5>
                                 <div class="diet">
                                     <div class="radio">
@@ -198,16 +198,36 @@
                             </div>
                         </div>
                         <button type="submit" class="secondary-btn" id="submit">Valider</button>
-                        <div class="modal" id="modal">
+                        <!--
+                        <div class="modal hidden" id="modal">
                             <div class="form-results">
                                 <div id="result" class="error"></div>
                                 <div id="summary" class="summary"></div>
                             </div>
+                            <div class="modal-btn">
+                                <div class="validation">
+                                    <button class="validate-btn" id="validate-btn" type="button">Valider</button>
+                                </div>
+                                <div class="reset">
+                                    <button class="reset-btn" id="reset-btn" type="button">Nouveau Formulaire</button>
+                                </div>
+                            </div>
+                        </div>-->
+                    </form>
+                    <div class="modal hidden" id="modal">
+                        <div class="form-results">
+                            <div id="result" class="error"></div>
+                            <div id="summary" class="summary"></div>
+                        </div>
+                        <div class="modal-btn">
+                            <div class="validation">
+                                <button class="validate-btn" id="validate-btn" type="button">Valider</button>
+                            </div>
                             <div class="reset">
-                                <button class="secondary-btn" type="button" onclick="reset()">Nouveau Formulaire</button>
+                                <button class="reset-btn" id="reset-btn" type="button">Nouveau Formulaire</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>

@@ -264,6 +264,39 @@ footer .container-footer .footer-credits p {
   color: #ffffff;
 }
 
+.section-formulaire {
+  position: relative;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 1.875rem 3.75rem;
+  background-color: #d9c7b3;
+  border-radius: 18px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  color: #363A2B;
+  gap: 2rem;
+}
+.modal .modal-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.blur {
+  filter: blur(10px);
+}
+
 .container-fluid {
   width: 100vw;
   position: relative;
