@@ -1,0 +1,89 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+/// section banner
+.container-fluid{
+    width:100vw;
+    position:relative;
+    height:120vh;
+    .video-banner{
+        width:100%;
+       video{
+            width:100%;
+        }
+    }
+    .title{
+        position:absolute;
+        top:30%;
+        left:40%;
+    }
+    .article-form{
+        @include display-flex(column, center, start);
+        gap:1.125rem;
+        position:absolute;
+        bottom: 4%;
+        left:25%;
+        padding: 1.875rem 3.75rem;
+        background-color: $tertiary-color;
+        border-radius: 18px;
+        width:51.45%;
+        form{
+            width:100%;
+            .form-banner{
+                @include display-flex(row, space-between, center);
+                .select-hotel{
+                    @include display-flex(column, center, center);
+                    gap:0.875rem;  
+                }
+                .visitor-hotel{
+                    @include display-flex(column, center, center);
+                    gap:0.875rem;
+                }
+                .date-hotel{
+                    @include display-flex(column, center, center);
+                    gap:0.875rem;
+                }
+                label{
+                    font-family: "karla-regular";
+                    font-size: 1rem;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .primary-btn{
+        position:absolute;
+        bottom:1%;
+        left:45%;
+    }
+}
+
+// section presentation
+
+.section-presentation{
+    @include display-flex(column, center, center);
+    .row{
+        margin: 6.875rem 0;
+        .article-hotel{
+            @include display-flex(row, space-between, center);
+            .presentation{
+                @include display-flex(column, space-between, start);
+                gap:3.125rem;
+            }
+            .carrousel{
+                overflow: hidden;
+                .slide{
+                    @include display-flex(column, space-between, center);
+                    gap:1rem;
+                    .overflow{
+                        height:689px;
+                        img{
+                            height:100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

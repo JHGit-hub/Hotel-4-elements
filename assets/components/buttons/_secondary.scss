@@ -1,0 +1,16 @@
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/variables' as *;
+
+.secondary-btn{
+    font-family: "karla-regular";
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    background-color: $secondary-color;
+    padding: 0.4375rem 0.875rem;
+    border-radius: 6px;
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,48 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+header{
+    @include display-flex(row, center, center);
+}
+
+.header-mobil{
+    display:none;
+}
+
+.header-desktop{
+    width:90%;
+    background-color: $bckgrd-color;
+    @include display-flex(row, space-between, center);
+    .menu{
+        @include display-flex(row, center, center);
+        gap:3.25rem;
+        .logo{
+            width:159px;
+            height:53px;
+            img{
+                width:100%;
+                height:auto;
+            }
+        }
+        ul{
+            @include display-flex(row, center, center);
+            gap:2.1875rem;
+        }
+    }
+    .header-contact{
+        @include display-flex(row, center, center);
+        gap:5.375rem;
+        .social-desktop{
+            ul{
+                @include display-flex(row, center, center); 
+                gap: 1.3125rem;
+            }
+        }
+        .CTA{
+            @include display-flex(row, center, center);
+            gap: 0.75rem; 
+        }
+    }
+
+}

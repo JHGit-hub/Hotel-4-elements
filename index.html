@@ -29,11 +29,11 @@
 				</div>
 				<div class="header-contact">
 					<div class="social-desktop">
-						<lu>
+						<ul>
 							<li><a href="#" title="Contactez le groupe d'hôtels 4 Élements">contact</a></li>
 							<li><a href="#" title="Visitez la page Instagram du groupe d'hôtels 4 Élements"><img src="assets/images/icons/instagram.svg"></a></li>
 							<li><a href="#" title="Visitez la page Facebook du groupe d'hôtels 4 Élements"><img src="assets/images/icons/facebook.svg"></a></li>
-						</lu>
+						</ul>
 					</div>
 					<div class="CTA">
 						<div class="secondary-btn">
@@ -73,55 +73,56 @@
 					<article>
 						<div class="article-form">
 							<form> <!-- formulaire sous le banner -->
-								<h4>recherchez une disponibilité</h4>
-								<div class="select-hotel">
-									<label for="hotel">choisir un hôtel</label>
-									<select name="hotel" id="hotel">
-										<option value="hotel-feu">hôtel feu</option>
-										<option value="hotel-eau">hôtel eau</option>
-										<option value="hotel-air">hôtel air</option>
-										<option value="hotel-terre">hôtel terre</option>
-									</select>
+								<h4>Recherchez une disponibilité</h4>
+								<div class="form-banner">
+									<div class="select-hotel">
+										<label for="hotel">Choisir un hôtel</label>
+										<select name="hotel" id="hotel">
+											<option value="hotel-feu">hôtel feu</option>
+											<option value="hotel-eau">hôtel eau</option>
+											<option value="hotel-air">hôtel air</option>
+											<option value="hotel-terre">hôtel terre</option>
+										</select>
+									</div>
+									<div class="visitor-hotel">
+										<label for="visitor">Nbr de personnes</label>
+										<input type="number" name="visitor" id="visitor">
+									</div>
+									<div class="date-hotel">
+										<label for="arrivee">Choisir une date d'arrivée</label>
+										<input type="date" name="arrivee" id="arrivee">
+									</div>
 								</div>
-								<div class="visitor">
-									<label for="visitor">nbr de personnes</label>
-									<input type="number" name="visitor" id="visitor">
-								</div>
-								<div class="date">
-									<label for="arrivee">choisir une date d'arrivée</label>
-									<input type="date" name="arrivee" id="arrivee">
-								</div>
-								<div class="primary-btn"> <!-- ouvrir la page formulaire et garder les données avec le js -->
-									<a href="pages/formulaire.html">
-										<div class="submit">
-											<input type="submit" value="valider">
-										</div>
-									</a>
-								</div>
+							<!-- <div class="primary-btn"> 
+									<a href="pages/formulaire.html" title="Voir les disponbilités pour séjourner dans l'un des hôtel du groupe 4 Élements">chercher</a>
+								</div> -->
 							</form>
 						</div>
 					</article>
+					<div class="primary-btn"> <!-- ouvrir la page formulaire et garder les données avec le js -->
+						<a href="pages/formulaire.html" title="Voir les disponbilités pour séjourner dans l'un des hôtel du groupe 4 Élements">chercher</a>
+					</div>
 				</div>
 			</section>
 			<section class="section-presentation"> <!-- presentation des hotels -->
 				<div class="container">
 					<div class="row">
 						<article>
-							<div class="article-hotel-feu"> <!-- hotel feu -->
-								<div class="presentation">
+							<div class="article-hotel"> <!-- hotel feu -->
+								<div class="presentation block">
 									<div class="title">
 										<h2>hôtel feu</h2>
 										<div class="localisation-rate"> <!-- localisation et rating -->
 											<div class="localisation">
-												<img src="assets/icons/map-pin.svg" alt="Emplacement de l'hotel feu en Finlande du groupe 4 Élements">
+												<img src="assets/images/icons/map-pin.svg" alt="Emplacement de l'hotel feu en Finlande du groupe 4 Élements">
 												<p>finlande</p>
 											</div>
 											<div class="rate">
-												<div class="stars"></div>
-													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-													<img src="assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+												<div class="stars">
+													<img src="assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/images/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
 												</div>
 												<p>(325 avis)</p>
 											</div>
@@ -138,37 +139,43 @@
 									<div class="primary-btn">
 										<a href="pages/formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
 									</div>
-								</div>
-							</div>
-							<div class="carrousel" id="carrouselBtn"> <!-- carrousel de photo de l'hotel / gestion en JS -->
-								<div class="slide " id="slide1">
-									<div class="overflow">
-										<img src="assets/images/igloos-hotel-feu.jpg" alt="photo des chambres igloos de l'hotel feu du groupe 4 Élements">
+								</div>						
+								<div class="carrousel block" id="carrouselBtnFeu"> <!-- carrousel de photo de l'hotel / gestion en JS -->
+									<div class="carrousel-slideFeu">
+										<div class="slide " id="slideFeu1">
+											<div class="overflow">
+												<img src="assets/images/igloos-hotel-feu.jpg" alt="photo des chambres igloos de l'hotel feu du groupe 4 Élements">
+											</div>
+											<div class="dot"> <!-- ajout de points pour inciter au defilement du carrousel -->
+												<img src="assets/images/icons/dark-dot.png">
+												<img src="assets/images/icons/white-dot.png">
+												<img src="assets/images/icons/white-dot.png">
+											</div>
+										</div>
 									</div>
-									<div class="dot"> <!-- ajout de points pour inciter au defilement du carrousel -->
-										<img src="assets/images/icons/dark-dot.png">
-										<img src="assets/images/icons/white-dot.png">
-										<img src="images/white-dot.png">
+									<div class="carrousel-slideFeu hidden">
+										<div class="slide" id="slideFeu2">
+											<div class="overflow">
+												<img src="assets/images/suite-laponne-hotel-feu.jpg" alt="photo de la suite laponne de l'hotel feu du groupe 4 Élements">
+											</div>
+											<div class="dot">
+												<img src="assets/images/icons/white-dot.png">
+												<img src="assets/images/icons/dark-dot.png">
+												<img src="assets/images/icons/white-dot.png">
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="slide hidden" id="slide2">
-									<div class="overflow">
-										<img src="assets/images/suite-laponne-hotel-feu.jpg" alt="photo de la suite laponne de l'hotel feu du groupe 4 Élements">
-									</div>
-									<div class="dot">
-										<img src="assets/images/icons/white-dot.png">
-										<img src="assets/images/icons/dark-dot.png">
-										<img src="assets/images/icons/white-dot.png">
-									</div>
-								</div>
-								<div class="slide hidden" id="slide3">
-									<div class="overflow">
-										<img src="assets/images/vue-ciel-hotel-feu.jpg" alt="photo vue du ciel de l'hotel feu du groupe 4 Élements">
-									</div>
-									<div class="dot">
-										<img src="assets/images/icons/white-dot.png">
-										<img src="assets/images/icons/white-dot.png">
-										<img src="assets/images/icons/dark-dot.png">
+									<div class="carrousel-slideFeu hidden">
+										<div class="slide" id="slideFeu3">
+											<div class="overflow">
+												<img src="assets/images/vue-ciel-hotel-feu.jpg" alt="photo vue du ciel de l'hotel feu du groupe 4 Élements">
+											</div>
+											<div class="dot">
+												<img src="assets/images/icons/white-dot.png">
+												<img src="assets/images/icons/white-dot.png">
+												<img src="assets/images/icons/dark-dot.png">
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -176,8 +183,8 @@
 					</div>
 					<div class="row">
 						<article>
-							<div class="article-hotel-air"> <!--presentation de l'hotel air -->
-								<div class="carrousel" id="carrouselBtn"> <!-- carrousel de photo de l'hotel air -->
+							<div class="article-hotel"> <!--presentation de l'hotel air -->
+								<div class="carrousel block" id="carrouselBtn"> <!-- carrousel de photo de l'hotel air -->
 									<div class="slide " id="slide1">
 										<div class="overflow">
 											<img src="assets/images/chambre-cime-hotel-air.jpg" alt="photo d'un chalbre à la cime des arbres de l'hotel air du groupe 4 Élements">
@@ -209,20 +216,20 @@
 										</div>
 									</div>
 								</div>
-								<div class="presentation">
+								<div class="presentation block">
 									<div class="title">
 										<h2>hôtel air</h2>
 										<div class="localisation-rate">
 											<div class="localisation">
-												<img src="assets/icons/map-pin.svg" alt="Emplacement de l'hotel air au Brésil du groupe 4 Élements">
+												<img src="assets/images/icons/map-pin.svg" alt="Emplacement de l'hotel air au Brésil du groupe 4 Élements">
 												<p>brésil</p>
 											</div>
 											<div class="rate">
-												<div class="stars"></div>
-													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-													<img src="assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+												<div class="stars">
+													<img src="assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/images/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
 												</div>
 												<p>(325 avis)</p>
 											</div>
@@ -245,21 +252,21 @@
 					</div>
 					<div class="row">
 						<article>
-							<div class="article-hotel-terre"> <!--presentation de l'hotel terre -->
-								<div class="presentation">
+							<div class="article-hotel"> <!--presentation de l'hotel terre -->
+								<div class="presentation block">
 									<div class="title">
 										<h2>hôtel terre</h2>
 										<div class="localisation-rate">
 											<div class="localisation">
-												<img src="assets/icons/map-pin.svg" alt="Emplacement de l'hotel terre en Thaïlande du groupe 4 Élements">
+												<img src="assets/images/icons/map-pin.svg" alt="Emplacement de l'hotel terre en Thaïlande du groupe 4 Élements">
 												<p>thaïlande</p>
 											</div>
 											<div class="rate">
-												<div class="stars"></div>
-													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-													<img src="assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+												<div class="stars">
+													<img src="assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/images/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
 												</div>
 												<p>(325 avis)</p>
 											</div>
@@ -275,91 +282,91 @@
 									<div class="primary-btn">
 										<a href="pages/formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver</a>
 									</div>
+								</div>							
+								<div class="carrousel block" id="carrouselBtn"> <!-- carrousel de photo de l'hotel terre -->
+									<div class="slide " id="slide1">
+										<div class="overflow">
+											<img src="assets/images/suite-grotte-hotel-terre.jpg" alt="photo d'une suite dans une grotte de l'hotel terre du groupe 4 Élements">
+										</div>
+										<div class="dot">
+											<img src="assets/images/icons/dark-dot.png">
+											<img src="assets/images/icons/white-dot.png">
+											<img src="assets/images/icons/white-dot.png">
+										</div>
+									</div>
+									<div class="slide hidden" id="slide2">
+										<div class="overflow">
+											<img src="assets/images/restaurant-grotte-hotel-terre.jpg" alt="photo du restaurant dans une grotte de l'hotel terre du groupe 4 Élements">
+										</div>
+										<div class="dot">
+											<img src="assets/images/icons/white-dot.png">
+											<img src="assets/images/icons/dark-dot.png">
+											<img src="assets/images/icons/white-dot.png">
+										</div>
+									</div>
+									<div class="slide hidden" id="slide3">
+										<div class="overflow">
+											<img src="assets/images/suite-royal-hotel-terre.jpg" alt="photo de la suite royal de l'hotel terre du groupe 4 Élements">
+										</div>
+										<div class="dot">
+											<img src="assets/images/icons/white-dot.png">
+											<img src="assets/images/icons/white-dot.png">
+											<img src="assets/images/icons/dark-dot.png">
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="carrousel" id="carrouselBtn"> <!-- carrousel de photo de l'hotel terre -->
-								<div class="slide " id="slide1">
-									<div class="overflow">
-										<img src="assets/images/suite-grotte-hotel-terre.jpg" alt="photo d'une suite dans une grotte de l'hotel terre du groupe 4 Élements">
-									</div>
-									<div class="dot">
-										<img src="assets/images/icons/dark-dot.png">
-										<img src="assets/images/icons/white-dot.png">
-										<img src="assets/images/icons/white-dot.png">
-									</div>
-								</div>
-								<div class="slide hidden" id="slide2">
-									<div class="overflow">
-										<img src="assets/images/restaurant-grotte-hotel-terre.jpg" alt="photo du restaurant dans une grotte de l'hotel terre du groupe 4 Élements">
-									</div>
-									<div class="dot">
-										<img src="assets/images/icons/white-dot.png">
-										<img src="assets/images/icons/dark-dot.png">
-										<img src="assets/images/icons/white-dot.png">
-									</div>
-								</div>
-								<div class="slide hidden" id="slide3">
-									<div class="overflow">
-										<img src="assets/images/suite-royal-hotel-terre.jpg" alt="photo de la suite royal de l'hotel terre du groupe 4 Élements">
-									</div>
-									<div class="dot">
-										<img src="assets/images/icons/white-dot.png">
-										<img src="assets/images/icons/white-dot.png">
-										<img src="assets/images/icons/dark-dot.png">
-									</div>
-								</div>
-							</div>
+							</div>	
 						</article>
 					</div>
 					<div class="row">
 						<article>
-							<div class="article-hotel-eau"> <!--presentation de l'hotel eau -->
-								<div class="presentation">
-									<div class="carrousel" id="carrouselBtn"> <!-- carrousel de photo de l'hotel eau -->
-										<div class="slide " id="slide1">
-											<div class="overflow">
-												<img src="assets/images/plongeur-ocean-pacifique-hotel-eau.jpg" alt="photo d'un plongeur dans au pied de l'ohtel eau du groupe 4 Élements">
-											</div>
-											<div class="dot">
-												<img src="assets/images/icons/dark-dot.png">
-												<img src="assets/images/icons/white-dot.png">
-												<img src="assets/images/icons/white-dot.png">
-											</div>
+							<div class="article-hotel"> <!--presentation de l'hotel eau -->
+								<div class="carrousel block" id="carrouselBtn"> <!-- carrousel de photo de l'hotel eau -->
+									<div class="slide " id="slide1">
+										<div class="overflow">
+											<img src="assets/images/plongeur-ocean-pacifique-hotel-eau.jpg" alt="photo d'un plongeur dans au pied de l'ohtel eau du groupe 4 Élements">
 										</div>
-										<div class="slide hidden" id="slide2">
-											<div class="overflow">
-												<img src="assets/images/suite-vue-sous-ocean-hotel-eau.jpg" alt="photo de la suite sous-marine de l'hotel eau du groupe 4 Élements">
-											</div>
-											<div class="dot">
-												<img src="assets/images/icons/white-dot.png">
-												<img src="assets/images/icons/dark-dot.png">
-												<img src="assets/images/icons/white-dot.png">
-											</div>
-										</div>
-										<div class="slide hidden" id="slide3">
-											<div class="overflow">
-												<img src="assets/images/suite-royal-piscine-hotel-eau.jpg" alt="photo de la suite royal avec piscine de l'hotel du groupe 4 Élements">
-											</div>
-											<div class="dot">
-												<img src="assets/images/icons/white-dot.png">
-												<img src="assets/images/icons/white-dot.png">
-												<img src="assets/images/icons/dark-dot.png">
-											</div>
+										<div class="dot">
+											<img src="assets/images/icons/dark-dot.png">
+											<img src="assets/images/icons/white-dot.png">
+											<img src="assets/images/icons/white-dot.png">
 										</div>
 									</div>
+									<div class="slide hidden" id="slide2">
+										<div class="overflow">
+											<img src="assets/images/suite-vue-sous-ocean-hotel-eau.jpg" alt="photo de la suite sous-marine de l'hotel eau du groupe 4 Élements">
+										</div>
+										<div class="dot">
+											<img src="assets/images/icons/white-dot.png">
+											<img src="assets/images/icons/dark-dot.png">
+											<img src="assets/images/icons/white-dot.png">
+										</div>
+									</div>
+									<div class="slide hidden" id="slide3">
+										<div class="overflow">
+											<img src="assets/images/suite-royal-piscine-hotel-eau.jpg" alt="photo de la suite royal avec piscine de l'hotel du groupe 4 Élements">
+										</div>
+										<div class="dot">
+											<img src="assets/images/icons/white-dot.png">
+											<img src="assets/images/icons/white-dot.png">
+											<img src="assets/images/icons/dark-dot.png">
+										</div>
+									</div>
+								</div>
+								<div class="presentation block">
 									<div class="title">
 										<h2>hôtel eau</h2>
 										<div class="localisation-rate">
 											<div class="localisation">
-												<img src="assets/icons/map-pin.svg" alt="Emplacement de l'hotel eau dans le pacifique du groupe 4 Élements">
+												<img src="assets/images/icons/map-pin.svg" alt="Emplacement de l'hotel eau dans le pacifique du groupe 4 Élements">
 												<p>thaïlande</p>
 											</div>
 											<div class="rate">
-												<div class="stars"></div>
-													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-													<img src="assets/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
-													<img src="assets/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
+												<div class="stars">
+													<img src="assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/images/icons/star-empty.svg" alt="1 étoile pleine d'avis visiteur sur 4 possible">
+													<img src="assets/images/icons/star-full.svg" alt="1 étoile vide d'avis visiteur sur 4 possible">
 												</div>
 												<p>(325 avis)</p>
 											</div>

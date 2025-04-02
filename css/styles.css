@@ -1,5 +1,62 @@
 h1 {
-  color: red;
+  font-family: "playfair-medium";
+  font-size: 6.25rem;
+  color: #d9c7b3;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: "playfair-medium";
+  font-size: 6rem;
+  color: #363A2B;
+}
+
+h3 {
+  font-family: "playfair-bold";
+  font-size: 3rem;
+  color: #363A2B;
+}
+
+h4 {
+  font-family: "playfair-bold";
+  font-size: 1.875rem;
+  color: #363A2B;
+}
+
+h5 {
+  font-family: "karla-bold";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+
+p {
+  font-family: "karla-regular";
+  font-size: 1.25rem;
+  color: #363A2B;
+}
+
+.p-legend {
+  font-family: "karla-regular";
+  font-size: 0.9375rem;
+  color: #363A2B;
+}
+
+a {
+  font-family: "karla-medium";
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #363A2B;
+}
+
+li {
+  list-style: none;
+}
+li a {
+  font-family: "karla-medium";
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #363A2B;
 }
 
 * {
@@ -11,12 +68,230 @@ h1 {
 }
 
 html {
-  font-size: 10px;
+  font-size: 16px;
+  background-color: #e5e0dc;
 }
 
+/**
 body {
-  font-family: "roboto";
-  font-size: "1.6rem";
+    font-family: $font-primary;
+    font-size: $font-size-base;
+}
+
+**/
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 74%;
+}
+
+.block {
+  width: 45.5%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-mobil {
+  display: none;
+}
+
+.header-desktop {
+  width: 90%;
+  background-color: #e5e0dc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-desktop .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3.25rem;
+}
+.header-desktop .menu .logo {
+  width: 159px;
+  height: 53px;
+}
+.header-desktop .menu .logo img {
+  width: 100%;
+  height: auto;
+}
+.header-desktop .menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.1875rem;
+}
+.header-desktop .header-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5.375rem;
+}
+.header-desktop .header-contact .social-desktop ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3125rem;
+}
+.header-desktop .header-contact .CTA {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.primary-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "karla-regular";
+  font-size: 1.875rem;
+  background-color: #363A2B;
+  padding: 0.4375rem 0.875rem;
+  border-radius: 6px;
+  width: 180px;
+  height: 50px;
+}
+.primary-btn a {
+  color: #ffffff;
+}
+
+.secondary-btn {
+  font-family: "karla-regular";
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  background-color: #4F6234;
+  padding: 0.4375rem 0.875rem;
+  border-radius: 6px;
+}
+.secondary-btn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container-fluid {
+  width: 100vw;
+  position: relative;
+  height: 120vh;
+}
+.container-fluid .video-banner {
+  width: 100%;
+}
+.container-fluid .video-banner video {
+  width: 100%;
+}
+.container-fluid .title {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.container-fluid .article-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.125rem;
+  position: absolute;
+  bottom: 4%;
+  left: 25%;
+  padding: 1.875rem 3.75rem;
+  background-color: #d9c7b3;
+  border-radius: 18px;
+  width: 51.45%;
+}
+.container-fluid .article-form form {
+  width: 100%;
+}
+.container-fluid .article-form form .form-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-fluid .article-form form .form-banner .select-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.875rem;
+}
+.container-fluid .article-form form .form-banner .visitor-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.875rem;
+}
+.container-fluid .article-form form .form-banner .date-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.875rem;
+}
+.container-fluid .article-form form .form-banner label {
+  font-family: "karla-regular";
+  font-size: 1rem;
+  color: #363A2B;
+}
+.container-fluid .primary-btn {
+  position: absolute;
+  bottom: 1%;
+  left: 45%;
+}
+
+.section-presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-presentation .row {
+  margin: 6.875rem 0;
+}
+.section-presentation .row .article-hotel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-presentation .row .article-hotel .presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 3.125rem;
+}
+.section-presentation .row .article-hotel .carrousel {
+  overflow: hidden;
+}
+.section-presentation .row .article-hotel .carrousel .slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.section-presentation .row .article-hotel .carrousel .slide .overflow {
+  height: 689px;
+}
+.section-presentation .row .article-hotel .carrousel .slide .overflow img {
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
