@@ -61,48 +61,48 @@
     </header>
     <main>
         <section class="section-formulaire"> <!-- formulaire de reservation -->
-            <div class="container-fluid">
-                <h2>bienvenu sur notre page de réseervation</h2>
+            <div class="container formulaire">
+                <h3>Bienvenu sur notre page de réservation</h3>
                 <div class="form">
                     <form>
                         <div class="formulaire-identification"> <!-- identité du visiteur -->
-                            <div class="name">
-                                <div class="surname">
+                            <div class="form-style">
+                                <div class="form-style">
                                     <label for="surname">Nom: </label>
                                     <input type="text" id="surname" name="surname" placeholder="Entrez votre Nom">
                                 </div>
-                                <div class="firstname">
+                                <div class="form-style">
                                     <label for="firstname">Prénom: </label>
                                     <input type="text" id="firstname" name="firstname" placeholder="Entrez votre Prénom">
                                 </div>
                             </div>
-                            <div class="adresse">
-                                <div class="street-nbr">
+                            <div class="form-style">
+                                <div class="street-nbr form-style">
                                     <label for="streetNbr">N° </label>
                                     <input type="number" id="streetNbr" name="streetNbr">
                                 </div>
-                                <div class="street-name">
-                                    <label for="streetName">Nom de la rue: </label>
+                                <div class="form-style streetName">
+                                    <label for="streetName">Rue: </label>
                                     <input type="text" id="streetName" name="streetName" placeholder="Nom de rue">
                                 </div>
                             </div>
-                            <div class="city">
-                                <div class="city-code">
-                                    <label for="code">Code postal: </label>
-                                    <input type="number" id="code" name="code">
+                            <div class="form-style">
+                                <div class="cityCode form-style">
+                                    <label for="cityCode">Code postal: </label>
+                                    <input type="number" id="cityCode" name="cityCode">
                                 </div>
-                                <div class="city-name">
+                                <div class="form-style">
                                     <label for="cityName">Ville: </label>
                                     <input type="text" id="cityName" name="cityName" placeholder="Nom de la ville">
                                 </div>
                             </div>
-                            <div class="email">
+                            <div class="form-style">
                                 <label for="email">Email: </label>
-                                <input type="text" name="email" id="email">
+                                <input type="text" name="email" id="email" placeholder="Entrez votre Email">
                             </div>
-                            <div class="phone">
+                            <div class="form-style">
                                 <label for="phone">Téléphone: </label>
-                                <input type="number" name="phone" id="phone">
+                                <input type="number" name="phone" id="phone"  placeholder="Fixe ou portable">
                             </div>
                         </div>
                         <div class="formulaire-reservation"> <!-- reservation -->
@@ -179,7 +179,7 @@
                                 </label>
                             </div>
                         </div>
-                        <button type="submit" class="submit" id="submit">Valider</button>
+                        <button type="submit" class="secondary-btn" id="submit">Valider</button>
                     </form>
                 </div>
             </div>
