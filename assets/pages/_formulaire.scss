@@ -2,8 +2,6 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/variables' as *;
 
-
-
 .section-formulaire{
     @include display-flex(column, center, center);
     .formulaire{
@@ -16,6 +14,10 @@
             background-color: $tertiary-color;
             border-radius: 18px;
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            .formulaire-identification{
+                @include display-flex(column, center, flex-start);
+                gap:1rem;
+            };
             .form-style{
                 @include display-flex(row, space-between, center);
                 gap:1rem;
@@ -38,6 +40,16 @@
                     width:100%;
                 }
             }
+            .reservation{
+                @include display-flex(column, center, flex-start);
+            }
+            .room{
+                @include display-flex(row, center, center);
+                gap:1rem;
+            }
+            .nbr-visitors input{
+                width:40px;
+            }
             label{
                 font-family: "karla-bold";
                 font-size: 1rem;
@@ -50,8 +62,3 @@
     }
 }
 
-
-.formulaire-identification{
-    @include display-flex(column, center, flex-start);
-    gap:1rem;
-};

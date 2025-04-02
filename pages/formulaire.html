@@ -109,17 +109,17 @@
                             <div class="hotel">
                                 <label for="hotel">choix de l'hôtel:</label>
                                 <select name="hotel" id="hotel">
-                                    <option value="hotel eau">Hôtel Eau</option>
+                                    <option value="hotel eau">Hôtel Feu</option>
                                     <option value="hotel air">Hôtel Air</option>
-                                    <option value="hotel feu">Hôtel Feu</option>
+                                    <option value="hotel feu">Hôtel Eau</option>
                                     <option value="hotel teu">Hôtel Terre</option>
                                 </select>
                             </div>
                             <div class="reservation">
                                 <div class="room">
                                     <label for="room">Choix de la chambre: </label>
-                                    <div><input type="radio" name="room" id="room" value="igloo">Chambre Igloo</div>
-                                    <div><input type="radio" name="room" id="room" value="suite">Suite Laponne</div>
+                                    <div><input type="radio" name="room" id="room" value="igloo"> Chambre Igloo</div>
+                                    <div><input type="radio" name="room" id="room" value="suite"> Suite Laponne</div>
                                 </div>
                                 <div class="nbr-visitors">
                                     <label for="visitors">Nombre de personnes</label>
@@ -164,22 +164,49 @@
                                 </label>
                             </div>
                             <div class="check-options">
-                                <label for="ponctual">
-                                    <input type="checkbox" name="ponctual" id="ponctual" value="oui">Ponctuel
+                                <label for="unresereved">
+                                    <input type="checkbox" name="unresereved" id="unresereved" value="oui">Sans réservation
                                 </label>
                             </div>
-                            <div class="check-options">
-                                <label for="restriction">
-                                    <input type="checkbox" name="restriction" id="restriction" value="oui">Restriction alimentaire
-                                </label>
+                            <div class="RestrictionSection" id="RestrictionSection">
+                                <h5>Choisissez votre régime alimentaire</h5>
+                                <div class="RestrictionSection">
+                                    <div class="radio">
+                                        <input type="radio" name="Restriction" id="RestrictionGluten" value="gluten"> Sans Gluten
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="Restriction" id="RestrictionLactose" value="lactose"> Sans Lactose
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="Restriction" id="RestrictionOther" value="other"> Autres allergies ou intolérances
+                                    </div>
+                                </div>
                             </div>
-                            <div class="check-options">
-                                <label for="diet">
-                                    <input type="checkbox" name="diet" id="diet" value="oui">Régime alimentaire
-                                </label>
+                            <div class="dietSection" id="dietSection">
+                                <h5>Choisissez votre régime alimentaire</h5>
+                                <div class="diet">
+                                    <div class="radio">
+                                        <input type="radio" name="diet" id="dietVegan" value="vegan"> Végan
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="diet" id="dietVegetarian" value="vegetarien"> Végétarien
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="diet" id="dietFree" value="free"> Aucun
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <button type="submit" class="secondary-btn" id="submit">Valider</button>
+                        <div class="modal" id="modal">
+                            <div class="form-results">
+                                <div id="result" class="error"></div>
+                                <div id="summary" class="summary"></div>
+                            </div>
+                            <div class="reset">
+                                <button class="secondary-btn" type="button" onclick="reset()">Nouveau Formulaire</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

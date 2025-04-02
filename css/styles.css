@@ -763,6 +763,13 @@ footer .container-footer .footer-credits p {
   border-radius: 18px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
+.section-formulaire .formulaire form .formulaire-identification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
 .section-formulaire .formulaire form .form-style {
   display: flex;
   flex-direction: row;
@@ -788,6 +795,22 @@ footer .container-footer .footer-credits p {
 .section-formulaire .formulaire form .form-style .streetName input {
   width: 100%;
 }
+.section-formulaire .formulaire form .reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.section-formulaire .formulaire form .room {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.section-formulaire .formulaire form .nbr-visitors input {
+  width: 40px;
+}
 .section-formulaire .formulaire form label {
   font-family: "karla-bold";
   font-size: 1rem;
@@ -795,14 +818,6 @@ footer .container-footer .footer-credits p {
 }
 .section-formulaire .formulaire form button {
   color: #ffffff;
-}
-
-.formulaire-identification {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
