@@ -159,6 +159,11 @@ document.getElementById("form").addEventListener("submit", function(e){
     const dietSection = document.querySelector('input[name="dietSection"]:checked')? 
     document.querySelector('input[name="dietSection"]').value : "aucun";
 
+    const roomValue = document.querySelector('input[name="room"]:checked')?
+    document.querySelector('input[name="room"]').value : "aucun";
+
+    console.log(roomValue);
+
     
     // calcul de la durée du séjour
     let arriveeDate = new Date(arrivee);
@@ -168,6 +173,7 @@ document.getElementById("form").addEventListener("submit", function(e){
     const oneDay = 24*60*60*1000;
 
     let journey = Math.round((departDate-arriveeDate)/oneDay);
+    console.log(journey);
 
 
     //condition Regex
@@ -210,11 +216,13 @@ document.getElementById("form").addEventListener("submit", function(e){
 
     if(!room){
         errors.push("Choisissez une Chambre");
-    } else if(room.value === "igloo"){
+    } else if(roomValue === "igloo"){
         total += journey*500
-    } else if(room.value === "suite"){
+    } else if(roomValue === "suite"){
         total += journey*850
     }
+    console.log(total);
+
 
     if(!arrivee)
         errors.push("Choisissez une date d'arrivée");
@@ -225,9 +233,6 @@ document.getElementById("form").addEventListener("submit", function(e){
     if(departDate < arriveeDate || departDate === arriveeDate)
         errors.push("les dates ne conviennent pas");
 
-    if(!breackfast && !driver && !guide && !lunch && !diner)
-        errors.push("Vous devez choisir au moins une option")
-
     let visitors = null;
     if(visitorsValue === ""){
         errors.push("Veuillez indiquer le nombre de personnes")
@@ -237,6 +242,8 @@ document.getElementById("form").addEventListener("submit", function(e){
         errors.push("Vous devez être entre 1 et 2 personnes")
         }
     };
+    console.log(visitors);
+
 
     if(driver)
         total += 11*journey;
@@ -265,7 +272,7 @@ document.getElementById("form").addEventListener("submit", function(e){
     // function résumé des options
     function optionsChoisis(){
         let options = [];
-        if(driver) options.push("Cauffeur");
+        if(driver) options.push("Chauffeur");
         if(diner) options.push("Dîner");
         if(lunch) options.push("Déjeuner");
         if(breackfast) options.push("Petit Déjeuner");

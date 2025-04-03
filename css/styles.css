@@ -274,6 +274,8 @@ footer .container-footer .footer-credits p {
   justify-content: center;
   align-items: center;
   position: absolute;
+  top: 25%;
+  left: 30%;
   padding: 1.875rem 3.75rem;
   background-color: #d9c7b3;
   border-radius: 18px;
