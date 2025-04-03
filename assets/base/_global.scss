@@ -13,3 +13,22 @@
 .row{
     margin: 6.875rem 0;
 }
+
+.mobil{
+    display:none;
+}
+
+@media(max-width:720px){
+    .block{
+        width:100%;
+    }
+    .row{
+        margin: 4.6875rem 0;
+    }
+    .mobil{
+        display: flex;
+    }
+    .desktop{
+        display:none;
+    }
+}

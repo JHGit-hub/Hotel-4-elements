@@ -95,6 +95,24 @@ body {
   margin: 6.875rem 0;
 }
 
+.mobil {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .block {
+    width: 100%;
+  }
+  .row {
+    margin: 4.6875rem 0;
+  }
+  .mobil {
+    display: flex;
+  }
+  .desktop {
+    display: none;
+  }
+}
 header {
   display: flex;
   flex-direction: row;
@@ -669,6 +687,8 @@ footer .container-footer .footer-credits p {
 @media (max-width: 720px) {
   .section-banner {
     overflow: hidden;
+  }
+  .section-banner .container-fluid {
     height: 100vh;
   }
   .section-banner .video-banner {
@@ -688,20 +708,114 @@ footer .container-footer .footer-credits p {
     font-size: 3.125rem;
   }
   .section-banner .article-form {
-    bottom: 20%;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 100;
     width: 74%;
+    height: 325px;
+    padding: 1.6875rem 2.75rem;
+  }
+  .section-banner .article-form form {
+    height: 100%;
   }
   .section-banner .article-form form .form-banner {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    height: 100%;
   }
   .section-banner .article-form form h4 {
     font-size: 1rem;
     text-align: center;
+  }
+  .section-banner .primary-btn {
+    z-index: 200;
+  }
+  .section-presentation .article-hotel h2 {
+    font-size: 4rem;
+  }
+  .section-presentation .article-hotel p {
+    font-size: 1rem;
+  }
+  .section-presentation .article-hotel .carrousel .slide .overflow {
+    height: 374px;
+  }
+  .section-presentation .row:nth-of-type(1) .article-hotel,
+  .section-presentation .row:nth-of-type(3) .article-hotel {
+    flex-direction: column-reverse;
+  }
+  .section-presentation .row:nth-of-type(2) .article-hotel,
+  .section-presentation .row:nth-of-type(4) .article-hotel {
+    flex-direction: column;
+  }
+  .section-concept .container-card {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .section-concept .container-card h3 {
+    font-size: 2.5rem;
+  }
+  .section-concept .container-card p {
+    font-size: 1rem;
+  }
+  .section-concept .container-card img {
+    width: 100%;
+  }
+  .container-card .card-concept:last-child .card-details {
+    flex-direction: column-reverse;
+  }
+  .section-creator {
+    /**
+    .container-creator{
+        flex-direction: column-reverse;
+        gap:1rem;
+        p{
+            font-size: 1rem;
+        }
+        .block{
+            height: fit-content;
+        }
+        .img-creator{
+            width:100%;
+            height:320px;
+            img{
+                transform: translateX(-200px);
+            }
+        }
+    }
+    h3{
+        font-size: 2.5rem;
+        gap:1rem;
+    }
+        **/
+  }
+  .section-creator article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .section-creator article .container-creator {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .section-creator article .container-creator p {
+    font-size: 1rem;
+  }
+  .section-creator article .container-creator .block {
+    height: fit-content;
+  }
+  .section-creator article .container-creator .img-creator {
+    width: 100%;
+    height: 320px;
+  }
+  .section-creator article .container-creator .img-creator img {
+    transform: translateX(-200px);
+  }
+  .section-creator article h3 {
+    font-size: 2.5rem;
+    gap: 1rem;
   }
 }
 .section-offers {
