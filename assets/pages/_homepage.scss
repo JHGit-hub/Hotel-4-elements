@@ -23,8 +23,13 @@
         @include display-flex(column, center, start);
         gap:1.125rem;
         position:absolute;
+        bottom:4%;
+        left:26%;
+        transform: translate (-50%, -50%);
+        /**
         bottom: 4%;
         left:25%;
+        **/
         padding: 1.875rem 3.75rem;
         background-color: $tertiary-color;
         border-radius: 18px;
@@ -56,6 +61,7 @@
     }
     .primary-btn{
         position:absolute;
+        transform: translate (-50%, -50%);
         bottom:1%;
         left:45%;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);

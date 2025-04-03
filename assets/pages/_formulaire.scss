@@ -2,63 +2,20 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/variables' as *;
 
+
 .section-formulaire{
-    @include display-flex(column, center, center);
-    .formulaire{
-        @include display-flex(column, center, center);
-        form{
-            width:600px;
-            @include display-flex(column, center, flex-start);
-            gap:1.125rem;
-            padding: 1.875rem 3.75rem;
-            background-color: $tertiary-color;
-            border-radius: 18px;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-            .formulaire-identification{
-                @include display-flex(column, center, flex-start);
-                gap:1rem;
-            };
-            .form-style{
-                @include display-flex(row, space-between, center);
-                gap:1rem;
-                input{
-                    width:100%;           
-                }
-                .street-nbr{
-                    justify-content: flex-start;
-                    input{
-                        width:40px;
-                    }
-                }
-                .cityCode{
-                    justify-content: flex-start;
-                    input{
-                        width:80px;
-                    }
-                }
-                .streetName input{
-                    width:100%;
-                }
-            }
-            .reservation{
-                @include display-flex(column, center, flex-start);
-            }
-            .room{
-                @include display-flex(row, center, center);
-                gap:1rem;
-            }
-            .nbr-visitors input{
-                width:40px;
-            }
-            label{
-                font-family: "karla-bold";
-                font-size: 1rem;
-                text-transform: capitalize;
-            }
-            button{
-                color:#ffffff;
-            }
+    width:100vw;
+    position:relative;
+    .video-banner{
+        position:absolute;
+        z-index: -100;
+        width:100%;
+       video{
+            width:100%;
+            filter: brightness(80%);
         }
     }
+    h3{
+        color: $tertiary-color;
+    }
 }
-

@@ -61,171 +61,162 @@
     </header>
     <main>
         <section class="section-formulaire"> <!-- formulaire de reservation -->
-            <div class="container formulaire">
-                <h3>Bienvenu sur notre page de réservation</h3>
-                <div class="form">
-                    <form id="form">
-                        <div class="formulaire-identification"> <!-- identité du visiteur -->
-                            <div class="form-style">
+            <div class="video-banner"> 
+                <video autoplay loop muted> <!-- video qui tourne en boucle sans son -->
+                    <source src="../assets/video/piscine-interieur-hotel-feu.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <div class="row formulaire">
+                    <h3>Bienvenue sur notre page de réservation</h3>
+                    <div class="form">
+                        <form id="form">
+                            <div class="formulaire-identification"> <!-- identité du visiteur -->
                                 <div class="form-style">
-                                    <label for="surname">Nom: </label>
-                                    <input type="text" id="surname" name="surname" placeholder="Entrez votre Nom">
-                                </div>
-                                <div class="form-style">
-                                    <label for="firstname">Prénom: </label>
-                                    <input type="text" id="firstname" name="firstname" placeholder="Entrez votre Prénom">
-                                </div>
-                            </div>
-                            <div class="form-style">
-                                <div class="street-nbr form-style">
-                                    <label for="streetNbr">N° </label>
-                                    <input type="number" id="streetNbr" name="streetNbr">
-                                </div>
-                                <div class="form-style streetName">
-                                    <label for="streetName">Rue: </label>
-                                    <input type="text" id="streetName" name="streetName" placeholder="Nom de rue">
-                                </div>
-                            </div>
-                            <div class="form-style">
-                                <div class="cityCode form-style">
-                                    <label for="cityCode">Code postal: </label>
-                                    <input type="number" id="cityCode" name="cityCode">
+                                    <div class="form-style">
+                                        <label for="surname">Nom: </label>
+                                        <input type="text" id="surname" name="surname" placeholder="Entrez votre Nom">
+                                    </div>
+                                    <div class="form-style">
+                                        <label for="firstname">Prénom: </label>
+                                        <input type="text" id="firstname" name="firstname" placeholder="Entrez votre Prénom">
+                                    </div>
                                 </div>
                                 <div class="form-style">
-                                    <label for="cityName">Ville: </label>
-                                    <input type="text" id="cityName" name="cityName" placeholder="Nom de la ville">
-                                </div>
-                            </div>
-                            <div class="form-style">
-                                <label for="email">Email: </label>
-                                <input type="text" name="email" id="email" placeholder="Entrez votre Email">
-                            </div>
-                            <div class="form-style">
-                                <label for="phone">Téléphone: </label>
-                                <input type="number" name="phone" id="phone"  placeholder="Fixe ou portable">
-                            </div>
-                        </div>
-                        <div class="formulaire-reservation"> <!-- reservation -->
-                            <div class="hotel">
-                                <label for="hotel">choix de l'hôtel:</label>
-                                <select name="hotel" id="hotel">
-                                    <option value="hotel eau">Hôtel Feu</option>
-                                    <option value="hotel air">Hôtel Air</option>
-                                    <option value="hotel feu">Hôtel Eau</option>
-                                    <option value="hotel teu">Hôtel Terre</option>
-                                </select>
-                            </div>
-                            <div class="reservation">
-                                <div class="room">
-                                    <label for="room">Choix de la chambre: </label>
-                                    <div><input type="radio" name="room" id="room" value="igloo"> Chambre Igloo</div>
-                                    <div><input type="radio" name="room" id="room" value="suite"> Suite Laponne</div>
-                                </div>
-                                <div class="nbr-visitors">
-                                    <label for="visitors">Nombre de personnes</label>
-                                    <input type="number" name="visitors" id="visitors">
-                                </div>
-                            </div>
-                            <div class="journey">
-                                <div class="arrivee">
-                                    <label for="arrivee">Date d'arrivée: </label>
-                                    <input type="date" id="arrivee" name="arrivee">
-                                </div>
-                                <div class="depart">
-                                    <label for="depart">Date de départ: </label>
-                                    <input type="date" id="depart" name="depart">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="formulaire-options"> <!-- options de reservations-->
-                            <div class="check-options">
-                                <label for="driver">
-                                    <input type="checkbox" name="driver" id="driver" value="oui"> Chauffeur (11€ / jour)
-                                </label>
-                            </div>
-                            <div class="check-options">
-                                <label for="visit">
-                                    <input type="checkbox" name="visit" id="visit" value="oui"> Visite (20€)
-                                </label>
-                            </div>
-                            <div class="check-options">
-                                <label for="breackfast">
-                                    <input type="checkbox" name="breackfast" id="breackfast" value="oui"> Petit Déjeuner (15€ / personnes / jour)
-                                </label>
-                            </div>
-                            <div class="check-options">
-                                <label for="lunch">
-                                    <input type="checkbox" name="lunch" id="lunch" value="oui"> Déjeuner (25€ / personnes / repas)
-                                </label>
-                            </div>
-                            <div class="check-options">
-                                <label for="diner">
-                                    <input type="checkbox" name="diner" id="diner" value="oui"> Dîner (25€ / personnes / repas)
-                                </label>
-                            </div>
-                            <div class="check-options">
-                                <label for="unresereved">
-                                    <input type="checkbox" name="unresereved" id="unresereved" value="oui"> Sans réservation (payement sur place, prévenir la veille)
-                                </label>
-                            </div>
-                            <div class="restrictionSection hidden" id="restrictionSection">
-                                <h5>Choisissez votre régime alimentaire</h5>
-                                <div class="restrictionSection">
-                                    <div class="radio">
-                                        <input type="radio" name="restriction" id="restrictionGluten" value="gluten"> Sans Gluten
+                                    <div class="streetNbr form-style">
+                                        <label for="streetNbr">N° </label>
+                                        <input type="number" id="streetNbr" name="streetNbr">
                                     </div>
-                                    <div class="radio">
-                                        <input type="radio" name="restriction" id="restrictionLactose" value="lactose"> Sans Lactose
+                                    <div class="form-style streetName">
+                                        <label for="streetName">Rue: </label>
+                                        <input type="text" id="streetName" name="streetName" placeholder="Nom de rue">
                                     </div>
-                                    <div class="radio">
-                                        <input type="radio" name="restriction" id="restrictionOther" value="other"> Autres allergies ou intolérances
+                                </div>
+                                <div class="form-style">
+                                    <div class="cityCode form-style">
+                                        <label for="cityCode">Code postal: </label>
+                                        <input type="number" id="cityCode" name="cityCode">
+                                    </div>
+                                    <div class="form-style">
+                                        <label for="cityName">Ville: </label>
+                                        <input type="text" id="cityName" name="cityName" placeholder="Nom de la ville">
+                                    </div>
+                                </div>
+                                <div class="form-style email">
+                                    <label for="email">Email: </label>
+                                    <input type="text" name="email" id="email" placeholder="Entrez votre Email">
+                                </div>
+                                <div class="form-style phone">
+                                    <label for="phone">Téléphone: </label>
+                                    <input type="number" name="phone" id="phone"  placeholder="Fixe ou portable">
+                                </div>
+                            </div>
+                            <div class="formulaire-reservation"> <!-- reservation -->
+                                <div class="hotel">
+                                    <label for="hotel">choix de l'hôtel:</label>
+                                    <select name="hotel" id="hotel">
+                                        <option value="hotel eau">Hôtel Feu</option>
+                                        <option value="hotel air">Hôtel Air</option>
+                                        <option value="hotel feu">Hôtel Eau</option>
+                                        <option value="hotel teu">Hôtel Terre</option>
+                                    </select>
+                                </div>
+                                <div class="reservation">
+                                    <div class="room">
+                                        <label for="room">Choix de la chambre: </label>
+                                        <div><input type="radio" name="room" id="room" value="igloo"> Chambre Igloo</div>
+                                        <div><input type="radio" name="room" id="room" value="suite"> Suite Laponne</div>
+                                    </div>
+                                    <div class="nbr-visitors">
+                                        <label for="visitors">Nombre de personnes</label>
+                                        <input type="number" name="visitors" id="visitors">
+                                    </div>
+                                </div>
+                                <div class="journey">
+                                    <div class="arrivee">
+                                        <label for="arrivee">Date d'arrivée: </label>
+                                        <input type="date" id="arrivee" name="arrivee">
+                                    </div>
+                                    <div class="depart">
+                                        <label for="depart">Date de départ: </label>
+                                        <input type="date" id="depart" name="depart">
                                     </div>
                                 </div>
                             </div>
-                            <div class="dietSection hidden" id="dietSection">
-                                <h5>Choisissez votre régime alimentaire</h5>
-                                <div class="diet">
-                                    <div class="radio">
-                                        <input type="radio" name="diet" id="dietVegan" value="vegan"> Végan
+                            <div class="formulaire-options"> <!-- options de reservations-->
+                                <div class="check-options">
+                                    <label for="driver">
+                                        <input type="checkbox" name="driver" id="driver" value="oui"> Chauffeur (11€ / jour)
+                                    </label>
+                                </div>
+                                <div class="check-options">
+                                    <label for="visit">
+                                        <input type="checkbox" name="visit" id="visit" value="oui"> Visite (20€)
+                                    </label>
+                                </div>
+                                <div class="check-options">
+                                    <label for="breackfast">
+                                        <input type="checkbox" name="breackfast" id="breackfast" value="oui"> Petit Déjeuner (15€ / personnes / jour)
+                                    </label>
+                                </div>
+                                <div class="check-options">
+                                    <label for="lunch">
+                                        <input type="checkbox" name="lunch" id="lunch" value="oui"> Déjeuner (25€ / personnes / repas)
+                                    </label>
+                                </div>
+                                <div class="check-options">
+                                    <label for="diner">
+                                        <input type="checkbox" name="diner" id="diner" value="oui"> Dîner (25€ / personnes / repas)
+                                    </label>
+                                </div>
+                                <div class="check-options">
+                                    <label for="unresereved">
+                                        <input type="checkbox" name="unresereved" id="unresereved" value="oui"> Sans réservation (payement sur place, prévenir la veille)
+                                    </label>
+                                </div>
+                                <div class="restrictionSection hidden" id="restrictionSection">
+                                    <h5>Choisissez votre régime alimentaire</h5>
+                                    <div class="restrictionSection">
+                                        <div class="radio">
+                                            <input type="radio" name="restriction" id="restrictionGluten" value="gluten"> Sans Gluten
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="restriction" id="restrictionLactose" value="lactose"> Sans Lactose
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="restriction" id="restrictionOther" value="other"> Autres allergies ou intolérances
+                                        </div>
                                     </div>
-                                    <div class="radio">
-                                        <input type="radio" name="diet" id="dietVegetarian" value="vegetarien"> Végétarien
-                                    </div>
-                                    <div class="radio">
-                                        <input type="radio" name="diet" id="dietFree" value="free"> Aucun
+                                </div>
+                                <div class="dietSection hidden" id="dietSection">
+                                    <h5>Choisissez votre régime alimentaire</h5>
+                                    <div class="diet">
+                                        <div class="radio">
+                                            <input type="radio" name="diet" id="dietVegan" value="vegan"> Végan
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="diet" id="dietVegetarian" value="vegetarien"> Végétarien
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="diet" id="dietFree" value="free"> Aucun
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <button type="submit" class="secondary-btn" id="submit">Valider</button>
-                        <!--
+                            <button type="submit" class="secondary-btn" id="submit">Valider</button>
+                        </form>
                         <div class="modal hidden" id="modal">
                             <div class="form-results">
                                 <div id="result" class="error"></div>
                                 <div id="summary" class="summary"></div>
                             </div>
                             <div class="modal-btn">
-                                <div class="validation">
-                                    <button class="validate-btn" id="validate-btn" type="button">Valider</button>
+                                <div class="validate-btn">
+                                    <a href="https://www.paypal.com/fr/home" title="Allez à l'esapce réglement" target="_blank">Valider</a>
                                 </div>
                                 <div class="reset">
-                                    <button class="reset-btn" id="reset-btn" type="button">Nouveau Formulaire</button>
+                                    <button class="reset-btn" id="reset-btn" type="button">Annuler</button>
                                 </div>
-                            </div>
-                        </div>-->
-                    </form>
-                    <div class="modal hidden" id="modal">
-                        <div class="form-results">
-                            <div id="result" class="error"></div>
-                            <div id="summary" class="summary"></div>
-                        </div>
-                        <div class="modal-btn">
-                            <div class="validation">
-                                <a href="https://www.paypal.com/fr/home" title="Vers zone de payement" target="_blank">Allez à l'esapce réglement</a>
-                                <button class="validate-btn" id="validate-btn" type="button">Valider</button>
-                            </div>
-                            <div class="reset">
-                                <button class="reset-btn" id="reset-btn" type="button">Nouveau Formulaire</button>
                             </div>
                         </div>
                     </div>

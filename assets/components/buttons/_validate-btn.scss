@@ -1,0 +1,19 @@
+@use '../../abstracts/mixins' as *;
+@use '../../abstracts/colors' as *;
+@use '../../abstracts/variables' as *;
+
+
+.validate-btn{
+    font-family: "karla-regular";
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    background-color: $secondary-color;
+    padding: 0.4375rem 0.875rem;
+    border-radius: 6px;
+    border: solid 1px $secondary-color;
+    box-shadow: -5px 5px 5px rgba(78, 97, 51, 0.5);
+    a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+}

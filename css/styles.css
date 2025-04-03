@@ -101,6 +101,7 @@ header {
   justify-content: center;
   align-items: center;
   box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+  background-color: #e5e0dc;
 }
 
 .header-mobil {
@@ -141,7 +142,7 @@ header {
   transition: color 0.3s ease-in-out;
 }
 .header-desktop .menu ul a:hover {
-  color: #4F6234;
+  color: #4e6133;
 }
 .header-desktop .header-contact {
   display: flex;
@@ -232,6 +233,108 @@ footer .container-footer .footer-credits p {
   font-size: 0.93rem;
 }
 
+.section-formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-formulaire .formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.section-formulaire .formulaire form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.125rem;
+  padding: 1.875rem 3.75rem;
+  background-color: #d9c7b3;
+  border-radius: 18px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.section-formulaire .formulaire form label {
+  font-family: "karla-bold";
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.section-formulaire .formulaire form button {
+  align-self: flex-end;
+  color: #ffffff;
+}
+.section-formulaire .formulaire form .formulaire-identification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.section-formulaire .formulaire form .formulaire-identification .form-style {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.section-formulaire .formulaire form .formulaire-identification .form-style .streetNbr {
+  width: 20%;
+}
+.section-formulaire .formulaire form .formulaire-identification .form-style .streetNbr input {
+  width: 40px;
+}
+.section-formulaire .formulaire form .formulaire-identification .form-style .streetName input {
+  width: 100%;
+}
+.section-formulaire .formulaire form .formulaire-identification .form-style .cityCode input {
+  width: 80px;
+}
+.section-formulaire .formulaire form .formulaire-identification .email {
+  display: flex;
+  gap: 3rem;
+}
+.section-formulaire .formulaire form .formulaire-reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.section-formulaire .formulaire form .formulaire-reservation .reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.section-formulaire .formulaire form .formulaire-reservation .reservation .room {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.section-formulaire .formulaire form .formulaire-reservation .reservation .nbr-visitors input {
+  width: 40px;
+}
+.section-formulaire .formulaire form .formulaire-reservation .journey {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.section-formulaire .formulaire form .formulaire-reservation .journey .arrivee {
+  display: flex;
+  gap: 1.5rem;
+}
+.section-formulaire .formulaire form .formulaire-reservation .journey .depart {
+  display: flex;
+  gap: 1rem;
+}
+
 .primary-btn {
   display: flex;
   flex-direction: row;
@@ -254,7 +357,7 @@ footer .container-footer .footer-credits p {
   font-family: "karla-regular";
   font-size: 1.25rem;
   text-transform: capitalize;
-  background-color: #4F6234;
+  background-color: #4e6133;
   padding: 0.4375rem 0.875rem;
   border-radius: 6px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -262,6 +365,33 @@ footer .container-footer .footer-credits p {
 .secondary-btn a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.reset-btn {
+  font-family: "karla-regular";
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  background-color: #FF0000;
+  padding: 0.4375rem 0.875rem;
+  border-radius: 6px;
+  border: solid 1px #ff0000;
+  box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.validate-btn {
+  font-family: "karla-regular";
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  background-color: #4e6133;
+  padding: 0.4375rem 0.875rem;
+  border-radius: 6px;
+  border: solid 1px #4e6133;
+  box-shadow: -5px 5px 5px rgba(78, 97, 51, 0.5);
+}
+.validate-btn a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .section-formulaire {
@@ -274,8 +404,9 @@ footer .container-footer .footer-credits p {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 25%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 1.875rem 3.75rem;
   background-color: #d9c7b3;
   border-radius: 18px;
@@ -324,7 +455,12 @@ footer .container-footer .footer-credits p {
   gap: 1.125rem;
   position: absolute;
   bottom: 4%;
-  left: 25%;
+  left: 26%;
+  transform: translate -50%, -50%;
+  /**
+  bottom: 4%;
+  left:25%;
+  **/
   padding: 1.875rem 3.75rem;
   background-color: #d9c7b3;
   border-radius: 18px;
@@ -368,6 +504,7 @@ footer .container-footer .footer-credits p {
 }
 .container-fluid .primary-btn {
   position: absolute;
+  transform: translate -50%, -50%;
   bottom: 1%;
   left: 45%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -550,7 +687,7 @@ footer .container-footer .footer-credits p {
 }
 .section-offers .container-offers .offers .room-offers .offers-details .offers-pictos .more-details {
   font-size: 0.9375rem;
-  color: #4F6234;
+  color: #4e6133;
 }
 .section-offers .container-offers .offers .room-offers .offers-details .price {
   font-family: "karla-bold";
@@ -775,84 +912,20 @@ footer .container-footer .footer-credits p {
 }
 
 .section-formulaire {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  position: relative;
 }
-.section-formulaire .formulaire {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.section-formulaire .formulaire form {
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 1.125rem;
-  padding: 1.875rem 3.75rem;
-  background-color: #d9c7b3;
-  border-radius: 18px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-.section-formulaire .formulaire form .formulaire-identification {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 1rem;
-}
-.section-formulaire .formulaire form .form-style {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
-.section-formulaire .formulaire form .form-style input {
+.section-formulaire .video-banner {
+  position: absolute;
+  z-index: -100;
   width: 100%;
 }
-.section-formulaire .formulaire form .form-style .street-nbr {
-  justify-content: flex-start;
-}
-.section-formulaire .formulaire form .form-style .street-nbr input {
-  width: 40px;
-}
-.section-formulaire .formulaire form .form-style .cityCode {
-  justify-content: flex-start;
-}
-.section-formulaire .formulaire form .form-style .cityCode input {
-  width: 80px;
-}
-.section-formulaire .formulaire form .form-style .streetName input {
+.section-formulaire .video-banner video {
   width: 100%;
+  filter: brightness(80%);
 }
-.section-formulaire .formulaire form .reservation {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.section-formulaire .formulaire form .room {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.section-formulaire .formulaire form .nbr-visitors input {
-  width: 40px;
-}
-.section-formulaire .formulaire form label {
-  font-family: "karla-bold";
-  font-size: 1rem;
-  text-transform: capitalize;
-}
-.section-formulaire .formulaire form button {
-  color: #ffffff;
+.section-formulaire h3 {
+  color: #d9c7b3;
 }
 
 /*# sourceMappingURL=styles.css.map */

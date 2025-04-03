@@ -10,8 +10,9 @@
 .modal{
     @include display-flex(column, center, center);
     position:absolute;
-    top:25%;
-    left:30%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
     padding: 1.875rem 3.75rem;
     background-color: $tertiary-color;
     border-radius: 18px;
@@ -23,6 +24,7 @@
         @include display-flex(row, space-between, center);
     }
 }
+
 
 .hidden{
     display:none;

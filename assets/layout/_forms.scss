@@ -1,0 +1,81 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+.section-formulaire{
+    @include display-flex(column, center, center);
+    .formulaire{
+        @include display-flex(column, center, center);
+        gap:2rem;
+        form{
+            width:600px;
+            @include display-flex(column, center, flex-start);
+            gap:1.125rem;
+            padding: 1.875rem 3.75rem;
+            background-color: $tertiary-color;
+            border-radius: 18px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            label{
+                font-family: "karla-bold";
+                font-size: 1rem;
+                text-transform: capitalize;
+            }
+            button{
+                align-self: flex-end;
+                color:#ffffff;
+            }
+            .formulaire-identification{
+                @include display-flex(column, center, flex-start);
+                gap:1rem;
+                .form-style{
+                    display:flex;
+                    gap:1rem;
+                    width:100%;
+                    .streetNbr{
+                        width:20%;
+                        input{
+                            width:40px;
+                        }
+                    }
+                    .streetName input{
+                        width:100%;
+                    }
+                    .cityCode input{
+                        width:80px;
+                    }
+                }
+                .email{
+                    display: flex;
+                    gap:3rem;
+                }
+            }
+            .formulaire-reservation{
+                @include display-flex(column, center, flex-start);
+                gap:1rem;
+                .reservation{
+                    @include display-flex(column, center, flex-start);
+                    gap:1rem;
+                    .room{
+                        @include display-flex(row, center, center);
+                        gap:1rem;
+                    }
+                    .nbr-visitors input{
+                        width:40px;
+                    }
+                }
+                .journey{
+                    @include display-flex(column, center, flex-start);
+                    gap:1rem;
+                    .arrivee{
+                        display:flex;
+                        gap:1.5rem;
+                    }
+                    .depart{
+                        display: flex;
+                        gap:1rem;
+                    }
+                }
+            }
+        }
+    }
+}
