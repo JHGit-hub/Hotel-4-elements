@@ -4,7 +4,6 @@
 
 header{
     @include display-flex(row, center, center);
-    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
     background-color: $bckgrd-color;
 }
 
@@ -60,6 +59,22 @@ header{
     }
 
 }
+
+.header-scrolled{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:0 5%;
+    z-index:1000;
+}
+
+.header-fixed{
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(229, 224, 220, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+
 
 @media (max-width:720px){
     .header-desktop{

@@ -82,19 +82,30 @@ if(window.location.pathname === "/index.html"){
 
 ////////////// scroll sur le header   
 
-const header = document.querySelector("header");
-const banner = document.querySelector(".banner");
-let hauteurBanner = banner.offsetHeight;
+    const header = document.querySelector(".header-desktop");
+    const banner = document.querySelector(".banner");
+    let hauteurBanner = banner.offsetHeight;
+    let hauteurHeader = header.offsetHeight;
 
-window.addEventListener("scroll",function(){
-    if(window.scrollY >= hauteurBanner){
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    };
-});
+    window.addEventListener("scroll",function(){
+        let opacity = (window.scrollY/hauteurBanner);
+        if(window.scrollY>hauteurHeader){
+            header.classList.add("header-scrolled");
+            header.style.opacity = opacity;
+        } else if(window.scrollY <= hauteurHeader){
+            header.style.opacity = 1;
+            header.classList.add("header-desktop");
+            header.classList.remove("header-scrolled");
+            header.classList.remove("header-fixed");
+        };
 
-
+        if(window.scrollY >= hauteurBanner){
+            header.classList.add("header-fixed");
+            opacity = 1;
+        } else {
+            header.classList.remove("header-fixed");
+        };
+    });
 }
 
 
@@ -137,6 +148,32 @@ if(window.location.pathname === "/pages/hotel-feu.html"){
         };
     });
 
+////////////// scroll sur le header   
+
+    const header = document.querySelector(".header-desktop");
+    const banner = document.querySelector(".banner");
+    let hauteurBanner = banner.offsetHeight;
+    let hauteurHeader = header.offsetHeight;
+
+    window.addEventListener("scroll",function(){
+        let opacity = (window.scrollY/hauteurBanner);
+        if(window.scrollY>hauteurHeader){
+            header.classList.add("header-scrolled");
+            header.style.opacity = opacity;
+        } else if(window.scrollY <= hauteurHeader){
+            header.style.opacity = 1;
+            header.classList.add("header-desktop");
+            header.classList.remove("header-scrolled");
+            header.classList.remove("header-fixed");
+        };
+
+        if(window.scrollY >= hauteurBanner){
+            header.classList.add("header-fixed");
+            opacity = 1;
+        } else {
+            header.classList.remove("header-fixed");
+        };
+    });
 }
 
 
@@ -228,10 +265,6 @@ if(window.location.pathname === "/pages/formulaire.html"){
         const roomValue = document.querySelector('input[name="room"]:checked')?
         document.querySelector('input[name="room"]').value : "aucun";
 
-        /**
-        const hotelValue = document.querySelector('input[name="hotel"]:checked')?
-        document.querySelector('input[name="hotel"]').value : "aucun";
-**/
         console.log(roomValue);
 
         
@@ -426,6 +459,32 @@ if(window.location.pathname === "/pages/formulaire.html"){
         };
     });
 
+////////////// scroll sur le header   
+
+    const header = document.querySelector(".header-desktop");
+    const banner = document.querySelector(".banner");
+    let hauteurBanner = banner.offsetHeight;
+    let hauteurHeader = header.offsetHeight;
+
+    window.addEventListener("scroll",function(){
+        let opacity = (window.scrollY/hauteurBanner);
+        if(window.scrollY>hauteurHeader){
+            header.classList.add("header-scrolled");
+            header.style.opacity = opacity;
+        } else if(window.scrollY <= hauteurHeader){
+            header.style.opacity = 1;
+            header.classList.add("header-desktop");
+            header.classList.remove("header-scrolled");
+            header.classList.remove("header-fixed");
+        };
+
+        if(window.scrollY >= hauteurBanner){
+            header.classList.add("header-fixed");
+            opacity = 1;
+        } else {
+            header.classList.remove("header-fixed");
+        };
+    });
 }
 
 
