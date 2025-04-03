@@ -54,3 +54,28 @@ header{
     }
 
 }
+
+@media (max-width:720px){
+    .header-desktop{
+        display:none;
+    }
+    .header{
+        position:relative;
+    }
+    .header-mobil{
+        position:absolute;
+        z-index: 100;
+        top:3%;
+        @include display-flex(row, space-between, center);
+        width:74%;
+        .nav{
+            display:none;
+        }
+        .social-mobil ul{
+            @include display-flex(row, center, center);
+            gap:1rem;
+        }
+    }
+
+}
+    

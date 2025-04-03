@@ -144,17 +144,20 @@
 
 // section video
 
-.container-fluid{
-    width:100vw;
-    position:relative;
-    height:auto;
-    .video-hotel{
-        width:100%;
-       video{
+.scetion-video{
+    .container-fluid{
+        width:100vw;
+        position:relative;
+        height:auto;
+        .video-hotel{
             width:100%;
+           video{
+                width:100%;
+            }
         }
     }
 }
+
 
 // section testimonials
 
