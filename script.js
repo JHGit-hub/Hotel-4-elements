@@ -103,6 +103,12 @@ if(window.location.pathname === "/pages/formulaire.html"){
     const restrictionSection = document.getElementById("restrictionSection");
     const modal = document.getElementById("modal");
     const form = document.getElementById("form");
+    const validateBtn = document.getElementById("validateBtn");
+    const summaryIdentity = document.getElementById("summaryIdentity");
+    const summaryReservation = document.getElementById("summaryReservation");
+    const summaryOptions = document.getElementById("summaryOptions");
+    const summaryTotal = document.getElementById("summaryTotal");
+    const errors = document.getElementById("errors");
 
 
 
@@ -155,7 +161,7 @@ if(window.location.pathname === "/pages/formulaire.html"){
 
 
         // tableau de stockage des erreurs
-        let errors =[];
+        let tblErrors =[];
 
 
         // condition d'attribution de valeur des regimes ou restrictions;
@@ -168,6 +174,9 @@ if(window.location.pathname === "/pages/formulaire.html"){
 
         const roomValue = document.querySelector('input[name="room"]:checked')?
         document.querySelector('input[name="room"]').value : "aucun";
+
+        const hotelValue = document.querySelector('input[name="hotel"]:checked')?
+        document.querySelector('input[name="hotel"]').value : "aucun";
 
         console.log(roomValue);
 
@@ -191,62 +200,61 @@ if(window.location.pathname === "/pages/formulaire.html"){
         //verification des champs et calcul du total
         let total = 0;
 
-
         if(surname.length <2 || surname.length > 50)
-            errors.push("Le Nom doit contenir entre 2 et 50 caractéres");
+            tblErrors.push("Le Nom doit contenir entre 2 et 50 caractéres");
 
         if(firstname.length <2 || firstname.length > 50)
-            errors.push("Le prénom doit contenir entre 2 et 50 caractéres");
+            tblErrors.push("Le prénom doit contenir entre 2 et 50 caractéres");
 
         if(streetName.length > 150)
-            errors.push("L'adresse ne peut pas avoir plus de 150 caractéres");
+            tblErrors.push("L'adresse ne peut pas avoir plus de 150 caractéres");
 
         let streetNbrInt = parseInt(streetNbr, 10);
         if (isNaN(streetNbrInt) || streetNbrInt === 0) {
-            errors.push("Numéro de rue non valide");
+            tblErrors.push("Numéro de rue non valide");
         }
 
         if(cityCode.length != 5)
-            errors.push("Le code postal doit contenir 5 chiffres");
+            tblErrors.push("Le code postal doit contenir 5 chiffres");
 
         if(cityName.length > 100)
-            errors.push("Le nom de la ville ne peut pas avoir plus de 100 caractéres");
+            tblErrors.push("Le nom de la ville ne peut pas avoir plus de 100 caractéres");
 
         if(!emailRegex.test(email) || email.length > 100)
-            errors.push("Email non valide");
+            tblErrors.push("Email non valide");
 
         if(!phoneRegex.test(phone))
-            errors.push("Tèlèphone non valide");
+            tblErrors.push("Tèlèphone non valide");
 
         if(!hotel)
-            errors.push("Choisissez un Hotel");
+            tblErrors.push("Choisissez un Hotel");
 
         if(!room){
-            errors.push("Choisissez une Chambre");
-        } else if(roomValue === "igloo"){
+            tblErrors.push("Choisissez une Chambre");
+        } else if(roomValue === "Chambre igloo"){
             total += journey*500
-        } else if(roomValue === "suite"){
+        } else if(roomValue === "Suite laponne"){
             total += journey*850
         }
         console.log(total);
 
 
         if(!arrivee)
-            errors.push("Choisissez une date d'arrivée");
+            tblErrors.push("Choisissez une date d'arrivée");
 
         if(!depart)
-            errors.push("Choisissez une date de départ");
+            tblErrors.push("Choisissez une date de départ");
 
         if(departDate < arriveeDate || departDate === arriveeDate)
-            errors.push("les dates ne conviennent pas");
+            tblErrors.push("les dates ne conviennent pas");
 
         let visitors = null;
         if(visitorsValue === ""){
-            errors.push("Veuillez indiquer le nombre de personnes")
+            tblErrors.push("Veuillez indiquer le nombre de personnes")
         }else {
             visitors = parseInt(visitorsValue);
             if(visitors<0 || visitors>2){
-            errors.push("Vous devez être entre 1 et 2 personnes")
+            tblErrors.push("Vous devez être entre 1 et 2 personnes")
             }
         };
         console.log(visitors);
@@ -268,14 +276,6 @@ if(window.location.pathname === "/pages/formulaire.html"){
             total += 20;
 
 
-
-
-
-
-
-
-
-
         // function résumé des options
         function optionsChoisis(){
             let options = [];
@@ -289,57 +289,87 @@ if(window.location.pathname === "/pages/formulaire.html"){
         }
 
 
-
-
-
-
         // affichage des resultats
         modal.classList.remove("hidden");
         form.classList.add("blur");
 
-        divResult.innerHTML = errors.length>0 ? errors.join("<br>") : "Enregistrement validé";
-        divSummary.innerHTML = errors.length === 0 ?
-            `Vous êtes Mr(Mme) ${firstname} ${surname}, habitant au ${streetNbr} de la rue ${streetName},<br>
-            ${cityCode}, ${cityName}, ${phone}, ${email}.<br>
-            Vous avez choisi l'${hotel} pour un séjour de ${visitorsValue} personne(s),<br>
-            arrivée le ${arriveeFormatted} et départ le ${departFormatted}, dans l'(la) ${room}.
-            Option(s) selectionnée(s): ${optionsChoisis()}<br>
-            Votre facture s'élève à ${total}€`: "Modifiez votre enregistrement";
+        if(tblErrors.length > 0){
+            divSummary.classList.remove("summary");
+            divSummary.classList.add("hidden");
+            divResult.innerHTML = tblErrors.join("<br>");
+            validateBtn.classList.add("hidden");
 
 
+            /** 
+            divSummary.classList.remove("summary");
+            errors.classList.remove("hidden");
+            errors.classList.add("results");
+            divResult.innerHTML = tblErrors.join("<br>");
+            validateBtn.classList.add("hidden");
+            **/
+        }
+
+        if(tblErrors.length === 0){
+            errors.classList.remove("results");
+            errors.classList.add("hidden");
+
+            /** 
+            errors.classList.remove("results");
+            divSummary.classList.remove("hidden");
+
+            **/
+            summaryIdentity.innerHTML = `Vous êtes Mr(Mme) ${firstname} ${surname}, habitant<br>
+            ${streetNbr} ${streetName}<br>
+            ${cityCode}, ${cityName}<br>
+            Téléphone: ${phone}, Email: ${email}.`
+            summaryReservation.innerHTML = `Vous avez choisi l'${hotelValue} pour un séjour de ${visitorsValue} personne(s)<br>
+            arrivée le ${arriveeFormatted} et départ le ${departFormatted}, dans la ${room}.`
+            summaryOptions.innerHTML = `Option(s) selectionnée(s): ${optionsChoisis()}`
+            summaryTotal.innerHTML = `Votre facture s'élève à ${total}€`
+        }
 
 
-
-    // function reset
+        // function reset
         function reset(){
-        const divResult = document.getElementById("result");
-        const divSummary = document.getElementById("summary");
-        const dietSection = document.getElementById("dietSection");
-        const restrictionSection = document.getElementById("restrictionSection");
-        const modal = document.getElementById("modal");
-        const form = document.getElementById("form");
+            const divResult = document.getElementById("result");
+            const divSummary = document.getElementById("summary");
+            const dietSection = document.getElementById("dietSection");
+            const restrictionSection = document.getElementById("restrictionSection");
+            const modal = document.getElementById("modal");
+            const form = document.getElementById("form");
 
-        const radio = document.querySelectorAll('input[type="radio"]');
-        radio.forEach(radio => radio.checked = false);        
-        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-        checkboxes.forEach(checkbox => checkbox.checked = false);
+            const radio = document.querySelectorAll('input[type="radio"]');
+            radio.forEach(radio => radio.checked = false);        
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => checkbox.checked = false);
 
-        divResult.innerHTML = "";
-        divSummary.innerHTML = "";
+            divResult.innerHTML = "";
+            summaryIdentity.innerHTML = "";
+            summaryReservation.innerHTML = "";
+            summaryOptions.innerHTML = "";
+            summaryTotal.innerHTML ="";
 
-        document.getElementById("form").reset();
-        restrictionSection.classList.add("hidden");
-        dietSection.classList.add("hidden");
-        modal.classList.add("hidden");
-        form.classList.remove("blur");
+            document.getElementById("form").reset();
+            restrictionSection.classList.add("hidden");
+            dietSection.classList.add("hidden");
+            modal.classList.add("hidden");
+            form.classList.remove("blur");
+            validateBtn.classList.remove("hidden");
+            errors.classList.add("results");
+            errors.classList.remove("hidden");
+            divSummary.classList.add("summary");
+            divSummary.classList.remove("hidden");
+
+            /**
+            errors.classList.add("hidden");
+            divSummary.classList.add("summary");
+            divSummary.classList.add("hidden");
+            **/
         }
 
         
+        // activation reset
         document.getElementById("reset-btn").addEventListener("click", reset);
-
-        document.getElementById("validate-btn").addEventListener("click", function(){
-            alert("Je sais pas faire la zone de payement!")
-        })
     })
 }
 

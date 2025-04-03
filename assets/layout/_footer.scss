@@ -12,7 +12,7 @@ footer{
         @include display-flex(row, space-between, center);
         .footer-social{
             @include display-flex(column, space-between, start);
-            gap:2rem;
+            gap:1.5rem;
             .logo-footer{
                 width:192px;
                 height:64px;

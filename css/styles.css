@@ -186,7 +186,7 @@ footer .container-footer .footer-social {
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 footer .container-footer .footer-social .logo-footer {
   width: 192px;
@@ -413,6 +413,26 @@ footer .container-footer .footer-credits p {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   color: #363A2B;
   gap: 2rem;
+}
+.modal .results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.modal .results h5 {
+  color: #FF0000;
+}
+.modal .summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.modal .summary h5 {
+  color: #363A2B;
 }
 .modal .modal-btn {
   width: 100%;

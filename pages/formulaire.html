@@ -124,8 +124,8 @@
                                 <div class="reservation">
                                     <div class="room">
                                         <label for="room">Choix de la chambre: </label>
-                                        <div><input type="radio" name="room" id="room" value="igloo"> Chambre Igloo</div>
-                                        <div><input type="radio" name="room" id="room" value="suite"> Suite Laponne</div>
+                                        <div><input type="radio" name="room" id="room" value="Chambre igloo"> Chambre Igloo</div>
+                                        <div><input type="radio" name="room" id="room" value="Suite laponne"> Suite Laponne</div>
                                     </div>
                                     <div class="nbr-visitors">
                                         <label for="visitors">Nombre de personnes</label>
@@ -174,7 +174,7 @@
                                         <input type="checkbox" name="unresereved" id="unresereved" value="oui"> Sans réservation (payement sur place, prévenir la veille)
                                     </label>
                                 </div>
-                                <div class="restrictionSection hidden" id="restrictionSection">
+                                <div class="restrictionSection hidden" id="restrictionSection"> <!-- restriction alimentaire -->
                                     <h5>Choisissez votre régime alimentaire</h5>
                                     <div class="restrictionSection">
                                         <div class="radio">
@@ -189,7 +189,7 @@
                                     </div>
                                 </div>
                                 <div class="dietSection hidden" id="dietSection">
-                                    <h5>Choisissez votre régime alimentaire</h5>
+                                    <h5>Choisissez votre régime alimentaire</h5> <!-- regime particulier -->
                                     <div class="diet">
                                         <div class="radio">
                                             <input type="radio" name="diet" id="dietVegan" value="vegan"> Végan
@@ -203,15 +203,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="secondary-btn" id="submit">Valider</button>
+                            <button type="submit" class="secondary-btn" id="submit">Valider</button> <!-- xsoumettre le form -->
                         </form>
-                        <div class="modal hidden" id="modal">
+                        <div class="modal hidden" id="modal"> <!-- modal des resultats cachées -->
                             <div class="form-results">
-                                <div id="result" class="error"></div>
-                                <div id="summary" class="summary"></div>
+                                <div id="errors" class="results">
+                                    <h5>Erreur (s)</h5>
+                                    <div id="result"></div>
+                                </div>
+                                <div id="summary" class="summary">
+                                    <h5>Merci de vérifier les informations avant de valider</h5>
+                                    <div id="summaryIdentity"></div>
+                                    <div id="summaryReservation"></div>
+                                    <div id="summaryOptions"></div>
+                                    <div id="summaryTotal"></div>
+                                </div>
                             </div>
-                            <div class="modal-btn">
-                                <div class="validate-btn">
+                            <div class="modal-btn"> <!-- bouton validation ou annulation de la modal -->
+                                <div class="validate-btn" id="validateBtn">
                                     <a href="https://www.paypal.com/fr/home" title="Allez à l'esapce réglement" target="_blank">Valider</a>
                                 </div>
                                 <div class="reset">
@@ -233,17 +242,17 @@
                 <p>N'attendez plus pour vivre l'expérience 4<br>
                     éléments le temps d'une nuit.
                 </p>
-                <div class="social-footer">
+                <div class="social-pictos">
                     <img src="../assets/images/icons/instagram.svg"  alt="icone du lien pour la page instagram des hotels du groupe 4 Élements">
                     <img src="../assets/images/icons/facebook.svg"  alt="icone du lien pour la page facebook des hotels du groupe 4 Élements">
                 </div>
             </div>
             <div class="footer-contact">
-                <p>contact</p>
+                <h4>contact</h4>
                 <div class="adresse-footer">
-                    <p><span class="span-contact">adresse:</span>8 avenue exemple</p>
-                    <p><span class="span-contact">ouverture:</span>tous les jours de 9h à 20h30</p>
-                    <p><span class="span-contact">tèlèphone:</span>33 08 280 28002</p>
+                    <p><span class="span-contact">adresse: </span>8 avenue exemple</p>
+                    <p><span class="span-contact">ouverture: </span>tous les jours de 9h à 20h30</p>
+                    <p><span class="span-contact">tèlèphone: </span>33 08 280 28002</p>
                 </div>
                 <div class="secondary-btn">
                     <a href="formulaire.html" title="Réservez votre séjour dans l'un des hôtels du groupe 4 Élements">reserver en ligne</a>
