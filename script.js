@@ -1,4 +1,4 @@
-////////////////////////////// JS HOMEPAGE
+////////////////////////////// JS HOMEPAGE //////////////////////////////
 
 
 ////////////// carrousel
@@ -6,66 +6,102 @@
 if(window.location.pathname === "/index.html"){
 //creation des variables
 
-let carrouselBtnFeu = document.getElementById("carrouselBtnFeu");
-let nodeSlideFeu = document.querySelectorAll(".carrousel-slideFeu");
-let tblSlideFeu = Array.from(nodeSlideFeu);
+    let carrouselBtnFeu = document.getElementById("carrouselBtnFeu");
+    let nodeSlideFeu = document.querySelectorAll(".carrousel-slideFeu");
+    let tblSlideFeu = Array.from(nodeSlideFeu);
 
-let carrouselBtnAir = document.getElementById("carrouselBtnAir");
-let nodeSlideAir = document.querySelectorAll(".carrousel-slideAir");
-let tblSlideAir = Array.from(nodeSlideAir);
+    let carrouselBtnAir = document.getElementById("carrouselBtnAir");
+    let nodeSlideAir = document.querySelectorAll(".carrousel-slideAir");
+    let tblSlideAir = Array.from(nodeSlideAir);
 
-let carrouselBtnEau = document.getElementById("carrouselBtnEau");
-let nodeSlideEau = document.querySelectorAll(".carrousel-slideEau");
-let tblSlideEau = Array.from(nodeSlideEau);
+    let carrouselBtnEau = document.getElementById("carrouselBtnEau");
+    let nodeSlideEau = document.querySelectorAll(".carrousel-slideEau");
+    let tblSlideEau = Array.from(nodeSlideEau);
 
-let carrouselBtnTerre = document.getElementById("carrouselBtnTerre");
-let nodeSlideTerre = document.querySelectorAll(".carrousel-slideTerre");
-let tblSlideTerre = Array.from(nodeSlideTerre);
+    let carrouselBtnTerre = document.getElementById("carrouselBtnTerre");
+    let nodeSlideTerre = document.querySelectorAll(".carrousel-slideTerre");
+    let tblSlideTerre = Array.from(nodeSlideTerre);
 
-let i=0;
+    let i=0;
 
 // action "click" sur carrousel
 
-carrouselBtnFeu.addEventListener("click", function(){
-    tblSlideFeu[i].classList.add("hidden");
-    if(i<tblSlideFeu.length-1){
-        i++;
+    carrouselBtnFeu.addEventListener("click", function(){
+        tblSlideFeu[i].classList.add("hidden");
+        if(i<tblSlideFeu.length-1){
+            i++;
+        } else {
+            i=0;
+        };
+        tblSlideFeu[i].classList.remove("hidden");
+    });
+    carrouselBtnEau.addEventListener("click", function(){
+        tblSlideEau[i].classList.add("hidden");
+        if(i<tblSlideEau.length-1){
+            i++;
+        } else {
+            i=0;
+        };
+        tblSlideEau[i].classList.remove("hidden");
+    });
+    carrouselBtnAir.addEventListener("click", function(){
+        tblSlideAir[i].classList.add("hidden");
+        if(i<tblSlideAir.length-1){
+            i++;
+        } else {
+            i=0;
+        };
+        tblSlideAir[i].classList.remove("hidden");
+    });
+    carrouselBtnTerre.addEventListener("click", function(){
+        tblSlideTerre[i].classList.add("hidden");
+        if(i<tblSlideTerre.length-1){
+            i++;
+        } else {
+            i=0;
+        };
+        tblSlideTerre[i].classList.remove("hidden");
+    });
+
+
+
+////////////// menu burger
+
+    const navMobil = document.getElementById("navMobil");
+    const burgerBtn = document.getElementById("burgerBtn");
+
+
+    burgerBtn.addEventListener("click",function(){
+        if(navMobil.classList.contains("hidden-nav")){
+            navMobil.classList.remove("hidden-nav");
+        } else {
+            navMobil.classList.add("hidden-nav");
+        };
+    });
+
+
+////////////// scroll sur le header   
+
+const header = document.querySelector("header");
+const banner = document.querySelector(".banner");
+let hauteurBanner = banner.offsetHeight;
+
+window.addEventListener("scroll",function(){
+    if(window.scrollY >= hauteurBanner){
+        header.classList.add("scrolled");
     } else {
-        i=0;
+        header.classList.remove("scrolled");
     };
-    tblSlideFeu[i].classList.remove("hidden");
 });
-carrouselBtnEau.addEventListener("click", function(){
-    tblSlideEau[i].classList.add("hidden");
-    if(i<tblSlideEau.length-1){
-        i++;
-    } else {
-        i=0;
-    };
-    tblSlideEau[i].classList.remove("hidden");
-});
-carrouselBtnAir.addEventListener("click", function(){
-    tblSlideAir[i].classList.add("hidden");
-    if(i<tblSlideAir.length-1){
-        i++;
-    } else {
-        i=0;
-    };
-    tblSlideAir[i].classList.remove("hidden");
-});
-carrouselBtnTerre.addEventListener("click", function(){
-    tblSlideTerre[i].classList.add("hidden");
-    if(i<tblSlideTerre.length-1){
-        i++;
-    } else {
-        i=0;
-    };
-    tblSlideTerre[i].classList.remove("hidden");
-});
+
 
 }
 
-////////////////////////////// JS PAGE HOTEL FEU
+
+
+
+
+////////////////////////////// JS PAGE HOTEL FEU //////////////////////////////
 
 ////////////// carrousel
 
@@ -84,6 +120,23 @@ if(window.location.pathname === "/pages/hotel-feu.html"){
         };
         tblSlideFeu[i].classList.remove("hidden");
     });
+
+
+
+////////////// menu burger
+
+    const navMobil = document.getElementById("navMobil");
+    const burgerBtn = document.getElementById("burgerBtn");
+
+
+    burgerBtn.addEventListener("click",function(){
+        if(navMobil.classList.contains("hidden-nav")){
+            navMobil.classList.remove("hidden-nav");
+        } else {
+            navMobil.classList.add("hidden-nav");
+        };
+    });
+
 }
 
 
@@ -93,7 +146,7 @@ if(window.location.pathname === "/pages/hotel-feu.html"){
 if(window.location.pathname === "/pages/formulaire.html"){
 
 
-    ////////////// formulaire de reservation
+////////////// formulaire de reservation
 
     // attribution des constantes et style
 
@@ -300,25 +353,12 @@ if(window.location.pathname === "/pages/formulaire.html"){
             divResult.innerHTML = tblErrors.join("<br>");
             validateBtn.classList.add("hidden");
 
-
-            /** 
-            divSummary.classList.remove("summary");
-            errors.classList.remove("hidden");
-            errors.classList.add("results");
-            divResult.innerHTML = tblErrors.join("<br>");
-            validateBtn.classList.add("hidden");
-            **/
         }
 
         if(tblErrors.length === 0){
             errors.classList.remove("results");
             errors.classList.add("hidden");
 
-            /** 
-            errors.classList.remove("results");
-            divSummary.classList.remove("hidden");
-
-            **/
             summaryIdentity.innerHTML = `<span class="summary-span">Vous êtes: </span>${firstname} ${surname}<br>
             <span class="summary-span">Adress: </span>${streetNbr} ${streetName}<br>
             <span class="summary-span">Ville: </span>${cityCode}, ${cityName}<br>
@@ -364,17 +404,28 @@ if(window.location.pathname === "/pages/formulaire.html"){
             divSummary.classList.add("summary");
             divSummary.classList.remove("hidden");
 
-            /**
-            errors.classList.add("hidden");
-            divSummary.classList.add("summary");
-            divSummary.classList.add("hidden");
-            **/
+
         }
 
         
         // activation reset
         document.getElementById("reset-btn").addEventListener("click", reset);
     })
+
+////////////// menu burger
+
+    const navMobil = document.getElementById("navMobil");
+    const burgerBtn = document.getElementById("burgerBtn");
+
+
+    burgerBtn.addEventListener("click",function(){
+        if(navMobil.classList.contains("hidden-nav")){
+            navMobil.classList.remove("hidden-nav");
+        } else {
+            navMobil.classList.add("hidden-nav");
+        };
+    });
+
 }
 
 

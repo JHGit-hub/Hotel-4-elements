@@ -14,7 +14,7 @@
     margin: 6.875rem 0;
 }
 
-.mobil{
+.mobil-hidden{
     display:none;
 }
 
@@ -25,10 +25,10 @@
     .row{
         margin: 4.6875rem 0;
     }
-    .mobil{
+    .mobil-hidden{
         display: flex;
     }
-    .desktop{
+    .desktop-hidden{
         display:none;
     }
 }

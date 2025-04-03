@@ -8,7 +8,7 @@ header{
     background-color: $bckgrd-color;
 }
 
-.header-mobil{
+.hidden-nav{
     display:none;
 }
 
@@ -16,6 +16,18 @@ header{
     width:90%;
     background-color: $bckgrd-color;
     @include display-flex(row, space-between, center);
+    ul, .login{
+        a{
+            text-transform: capitalize;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        a:hover{
+            text-decoration: underline;
+            text-decoration-color: $secondary-color;
+            color: $secondary-color;
+        } 
+    }
     .menu{
         @include display-flex(row, center, center);
         gap:3.25rem;
@@ -30,12 +42,6 @@ header{
         ul{
             @include display-flex(row, center, center);
             gap:2.1875rem;
-            a{
-                transition: color 0.3s ease-in-out;
-            }
-            a:hover{
-                color: $secondary-color;
-            }
         }
     }
     .header-contact{
@@ -68,9 +74,25 @@ header{
         top:3%;
         @include display-flex(row, space-between, center);
         width:74%;
-        .nav{
-            display:none;
+        .burger{
+            position:relative;
+            nav{
+                position: absolute;
+                left:0%;
+                background-color: $tertiary-color;
+                width:200px;
+                border:solid 1px $tertiary-color;
+                border-radius: 10px;
+                ul{
+                    @include display-flex(column, center, center);
+                    gap:1.5rem;
+                    padding: 1rem 0;
+                }
+            }
         }
+
+
+
         .social-mobil ul{
             @include display-flex(row, center, center);
             gap:1rem;
