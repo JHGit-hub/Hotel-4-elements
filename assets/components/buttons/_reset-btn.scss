@@ -11,6 +11,10 @@
     padding: 0.4375rem 0.875rem;
     border-radius: 6px;
     border: solid 1px #ff0000;
-    box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 1s ease-in-out;
     color: #ffffff;
+}
+.reset-btn:hover{
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.5);
 }

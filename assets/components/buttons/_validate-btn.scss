@@ -11,9 +11,14 @@
     padding: 0.4375rem 0.875rem;
     border-radius: 6px;
     border: solid 1px $secondary-color;
-    box-shadow: -5px 5px 5px rgba(78, 97, 51, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 1s ease-in-out;
     a{
         color: #ffffff;
         text-decoration: none;
     }
+}
+
+.validate-btn:hover{
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.5);
 }

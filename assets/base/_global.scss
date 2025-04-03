@@ -18,6 +18,14 @@
     display:none;
 }
 
+// backontop
+.backontop{
+    position:fixed;
+    z-index: 10000;
+    top:50%;
+    right:5%;  
+}
+
 @media(max-width:720px){
     .block{
         width:100%;

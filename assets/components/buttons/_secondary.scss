@@ -10,8 +10,13 @@
     padding: 0.4375rem 0.875rem;
     border-radius: 6px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 1s ease-in-out;
     a{
         text-decoration: none;
         color: #ffffff;
     }
+}
+
+.secondary-btn:hover{
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
