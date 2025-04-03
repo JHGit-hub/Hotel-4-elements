@@ -431,6 +431,9 @@ footer .container-footer .footer-credits p {
   align-items: flex-start;
   gap: 1rem;
 }
+.modal .summary .summary-span {
+  font-family: "karla-bold";
+}
 .modal .summary h5 {
   color: #363A2B;
 }

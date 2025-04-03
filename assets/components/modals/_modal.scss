@@ -29,6 +29,9 @@
     .summary{
         @include display-flex(column, center, flex-start);
         gap:1rem;
+        .summary-span{
+            font-family: 'karla-bold';
+        }
         h5{
             color: $primary-color;
         }  

@@ -175,9 +175,10 @@ if(window.location.pathname === "/pages/formulaire.html"){
         const roomValue = document.querySelector('input[name="room"]:checked')?
         document.querySelector('input[name="room"]').value : "aucun";
 
+        /**
         const hotelValue = document.querySelector('input[name="hotel"]:checked')?
         document.querySelector('input[name="hotel"]').value : "aucun";
-
+**/
         console.log(roomValue);
 
         
@@ -318,14 +319,17 @@ if(window.location.pathname === "/pages/formulaire.html"){
             divSummary.classList.remove("hidden");
 
             **/
-            summaryIdentity.innerHTML = `Vous êtes Mr(Mme) ${firstname} ${surname}, habitant<br>
-            ${streetNbr} ${streetName}<br>
-            ${cityCode}, ${cityName}<br>
-            Téléphone: ${phone}, Email: ${email}.`
-            summaryReservation.innerHTML = `Vous avez choisi l'${hotelValue} pour un séjour de ${visitorsValue} personne(s)<br>
-            arrivée le ${arriveeFormatted} et départ le ${departFormatted}, dans la ${room}.`
-            summaryOptions.innerHTML = `Option(s) selectionnée(s): ${optionsChoisis()}`
-            summaryTotal.innerHTML = `Votre facture s'élève à ${total}€`
+            summaryIdentity.innerHTML = `<span class="summary-span">Vous êtes: </span>${firstname} ${surname}<br>
+            <span class="summary-span">Adress: </span>${streetNbr} ${streetName}<br>
+            <span class="summary-span">Ville: </span>${cityCode}, ${cityName}<br>
+            <span class="summary-span">Téléphone: </span>${phone}<br>
+            <span class="summary-span">Email: </span>${email}.`
+            summaryReservation.innerHTML = `<span class="summary-span">Vous avez choisi </span>la ${room} de l'${hotel}<br>
+            <span class="summary-span">pour un séjour de </span>${visitorsValue} personne(s)<br>
+            <span class="summary-span">arrivée le </span>${arriveeFormatted}<br>
+            <span class="summary-span">départ le </span>${departFormatted}`
+            summaryOptions.innerHTML = `<span class="summary-span">Option(s) selectionnée(s): </span>${optionsChoisis()}`
+            summaryTotal.innerHTML = `<span class="summary-span">Votre facture s'élève à: </span>${total}€`
         }
 
 
