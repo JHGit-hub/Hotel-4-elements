@@ -87,9 +87,12 @@
             .slide{
                 @include display-flex(column, space-between, center);
                 gap:1rem;
+                width:488px;
+                overflow: hidden;
                 img{
                     height:100%;
                     width:auto;
+                    
                 }
             }
         }
@@ -145,7 +148,6 @@
             img{
                 transform: translateX(-500px);
                 height:100%;
-                width:auto;
             }
         } 
     }
@@ -188,17 +190,7 @@
             z-index: 200;
         }
     }
-
-
-
-
 }
-
-
-
-
-
-
 
 
 

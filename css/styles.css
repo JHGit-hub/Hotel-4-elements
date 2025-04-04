@@ -712,6 +712,8 @@ footer .container-footer .footer-credits p {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  width: 488px;
+  overflow: hidden;
 }
 .section-presentation .article-hotel .carrousel .slide img {
   height: 100%;
@@ -790,7 +792,6 @@ footer .container-footer .footer-credits p {
 .section-creator .container-creator .img-creator img {
   transform: translateX(-500px);
   height: 100%;
-  width: auto;
 }
 
 @media (min-width: 720px) and (max-width: 1080px) {
