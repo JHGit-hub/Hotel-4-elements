@@ -579,15 +579,13 @@ footer .container-footer .footer-credits p {
   flex-direction: row;
   gap: 2rem;
   overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
   padding-bottom: 1rem;
 }
 .carrousel > * {
   flex: 0 0 auto;
 }
 .carrousel::-webkit-scrollbar {
-  height: 8px;
+  height: 10px;
 }
 .carrousel::-webkit-scrollbar-track {
   background: #ffffff;

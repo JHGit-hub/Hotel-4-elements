@@ -7,14 +7,12 @@
     flex-direction: row;
     gap: 2rem; 
     overflow-x: auto; 
-    overflow-y: hidden;
-    white-space: nowrap;
     padding-bottom: 1rem;
     & > *{
         flex:0 0 auto;
     }
     &::-webkit-scrollbar {
-        height: 8px;
+        height: 10px;
     }
     
     &::-webkit-scrollbar-track {
