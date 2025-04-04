@@ -76,21 +76,20 @@
 .section-presentation{
     @include display-flex(column, center, center);
     .article-hotel{
+        height:621px;
         @include display-flex(row, space-between, center);
         .presentation{
             @include display-flex(column, space-between, start);
             gap:3.125rem;
         }
         .carrousel{
-            overflow: hidden;
+            height: 100%;
             .slide{
                 @include display-flex(column, space-between, center);
                 gap:1rem;
-                .overflow{
-                    height:689px;
-                    img{
-                        height:100%;
-                    }
+                img{
+                    height:621px;
+                    width:auto;
                 }
             }
         }

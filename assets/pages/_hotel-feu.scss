@@ -56,8 +56,32 @@
 // section options
 
 .section-options{
-    .container-fluid{
+    @include display-flex(row, center, center);
+    .container{
         height:auto;
+        .carrousel{
+            .slide{
+                position:relative;
+                max-height:350px;
+                max-width: 488px;
+                overflow: hidden;
+                img{
+                    max-width:120%;
+                    height:auto;
+                    margin:auto;
+                    filter: brightness(70%);
+                }
+                .slide-description{
+                    @include display-flex(column, center, flex-end);
+                    position:absolute;
+                    bottom:1%;
+                    right:1%;
+                    h4, p, h5{
+                        color:#E5E0DC;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -74,8 +98,32 @@
 // section activity
 
 .section-activity{
-    .container-fluid{
+    @include display-flex(row, center, center);
+    .container{
         height:auto;
+        .carrousel{
+            .slide{
+                position:relative;
+                max-height:350px;
+                max-width: 488px;
+                overflow: hidden;
+                img{
+                    max-width:120%;
+                    height:auto;
+                    margin:auto;
+                    filter: brightness(70%);
+                }
+                .slide-description{
+                    @include display-flex(column, center, flex-end);
+                    position:absolute;
+                    bottom:1%;
+                    right:1%;
+                    h4, p, h5{
+                        color:#E5E0DC;
+                    }
+                }
+            }
+        }
     }
 }
 

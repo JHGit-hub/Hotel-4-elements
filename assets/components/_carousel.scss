@@ -2,7 +2,7 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/variables' as *;
 
-.carrousel-options{
+.carrousel{
     display: flex;
     flex-direction: row;
     gap: 2rem; 
@@ -29,79 +29,5 @@
 
     &::-webkit-scrollbar-thumb:hover{
         background: $primary-color;
-    }
-    .slide{
-        position:relative;
-        height:350px;
-        width: 488px;
-        overflow: hidden;
-        img{
-            max-width:120%;
-            height:auto;
-            margin:auto;
-            filter: brightness(70%);
-        }
-        .slide-description{
-            @include display-flex(column, center, flex-end);
-            position:absolute;
-            bottom:1%;
-            right:1%;
-            h4, p, h5{
-                color:#E5E0DC;
-            }
-        }
-    }
-}
-
-
-.carrousel-activity{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem; 
-    overflow-x: auto; 
-    overflow-y: hidden;
-    white-space: nowrap;
-    padding-bottom: 1rem;
-    & > *{
-        flex:0 0 auto;
-    }
-    &::-webkit-scrollbar {
-        height: 8px;
-    }
-    
-    &::-webkit-scrollbar-track {
-        background: #ffffff;
-        border-radius: 10px;
-    }
-    
-    &::-webkit-scrollbar-thumb {
-        background: $secondary-color;
-        border-radius: 10px;
-    }
-
-    &::-webkit-scrollbar-thumb:hover{
-        background: $primary-color;
-    }
-
-    .slide{
-        position:relative;
-        max-height:350px;
-        max-width: 488px;
-        overflow: hidden;
-        img{
-            max-width:120%;
-            height:auto;
-            margin:auto;
-            filter: brightness(70%);
-        }
-        .slide-description{
-            @include display-flex(column, center, flex-end);
-            position:absolute;
-            bottom:1%;
-            right:1%;
-            h4, p, h5{
-                color:#E5E0DC;
-            }
-        }
     }
 }
