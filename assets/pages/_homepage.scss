@@ -85,14 +85,13 @@
         .carrousel{
             height: 100%;
             .slide{
-                @include display-flex(column, space-between, center);
+                @include display-flex(row, space-between, center);
                 gap:1rem;
                 width:488px;
                 overflow: hidden;
                 img{
                     height:100%;
-                    width:auto;
-                    
+                    width:auto;    
                 }
             }
         }

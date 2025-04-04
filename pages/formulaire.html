@@ -51,10 +51,12 @@
                     <img src="../assets/images/icons/burger.svg" alt="Faire apparaitre le menu mobil du site internet du groupe 4 Élements">
                     <nav class="hidden-nav" id="navMobil">
                         <ul>
-                            <li><a href="/hotel-feu.html" title="Hotel Feu du groupe 4 Élements">feu</a></li>
+                            <li><a href="../index.html" title="retour à la page d'accueil du site des hôtels du groupe 4 Éléments"><img src="../assets/images/logo/logo-noir-4-elements.png" alt="logo du groupe d'hôtels 4 Élements"></a></li>
+                            <li><a href="hotel-feu.html" title="Hotel Feu du groupe 4 Élements">feu</a></li>
                             <li><a href="#" title="Hotel Air du groupe d'hôtels 4 Élements">air</a></li>
                             <li><a href="#" title="Hotel Terre du groupe d'hôtels 4 Élements">terre</a></li>
                             <li><a href="#" title="Hotel Feu du groupe d'hôtels 4 Élements">eau</a></li>
+                            <li><a href="formulaire.html" title="pages du formulaire de réservation d'un séjour dans l'un des Hotel du groupe d'hôtels 4 Élements">réservation</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -216,7 +218,8 @@
                             </div>
                             <button type="submit" class="secondary-btn" id="submit">Valider</button> <!-- xsoumettre le form -->
                         </form>
-                        <div class="modal hidden" id="modal"> <!-- modal des resultats cachées -->
+                        <!--
+                        <div class="modal hidden" id="modal"> !-- modal des resultats cachées --
                             <div class="form-results">
                                 <div id="errors" class="results">
                                     <h5>Erreur (s)</h5>
@@ -230,7 +233,7 @@
                                     <div id="summaryTotal"></div>
                                 </div>
                             </div>
-                            <div class="modal-btn"> <!-- bouton validation ou annulation de la modal -->
+                            <div class="modal-btn"> !-- bouton validation ou annulation de la modal --
                                 <div class="validate-btn" id="validateBtn">
                                     <a href="https://www.paypal.com/fr/home" title="Allez à l'esapce réglement" target="_blank">Valider</a>
                                 </div>
@@ -239,10 +242,34 @@
                                 </div>
                             </div>
                         </div>
+                    -->
                     </div>
                 </div>
             </div>
         </section>
+        <div class="modal hidden" id="modal"> <!-- modal des resultats cachées -->
+            <div class="form-results">
+                <div id="errors" class="results">
+                    <h5>Erreur (s)</h5>
+                    <div id="result"></div>
+                </div>
+                <div id="summary" class="summary">
+                    <h5>Merci de vérifier les informations avant de valider</h5>
+                    <div id="summaryIdentity"></div>
+                    <div id="summaryReservation"></div>
+                    <div id="summaryOptions"></div>
+                    <div id="summaryTotal"></div>
+                </div>
+            </div>
+            <div class="modal-btn"> <!-- bouton validation ou annulation de la modal -->
+                <div class="validate-btn" id="validateBtn">
+                    <a href="https://www.paypal.com/fr/home" title="Allez à l'esapce réglement" target="_blank">Valider</a>
+                </div>
+                <div class="reset">
+                    <button class="reset-btn" id="reset-btn" type="button">Annuler</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container-footer">

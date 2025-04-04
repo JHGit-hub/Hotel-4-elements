@@ -1,6 +1,5 @@
 ////////////////////////////// JS HOMEPAGE //////////////////////////////
 
-
 ////////////// carrousel
 
 if(window.location.href.includes("index.html")){
@@ -9,12 +8,15 @@ if(window.location.href.includes("index.html")){
 
     const navMobil = document.getElementById("navMobil");
     const burgerBtn = document.getElementById("burgerBtn");
+    const main = document.querySelector("main");
 
 
     burgerBtn.addEventListener("click",function(){
         if(navMobil.classList.contains("hidden-nav")){
+            main.classList.add("blur");
             navMobil.classList.remove("hidden-nav");
         } else {
+            main.classList.remove("blur");
             navMobil.classList.add("hidden-nav");
         };
     });
@@ -62,12 +64,15 @@ if(window.location.href.includes("hotel-feu.html")){
 
     const navMobil = document.getElementById("navMobil");
     const burgerBtn = document.getElementById("burgerBtn");
+    const main = document.querySelector("main");
 
 
     burgerBtn.addEventListener("click",function(){
         if(navMobil.classList.contains("hidden-nav")){
+            main.classList.add("blur");
             navMobil.classList.remove("hidden-nav");
         } else {
+            main.classList.remove("blur");
             navMobil.classList.add("hidden-nav");
         };
     });
@@ -116,7 +121,7 @@ if(window.location.href.includes("formulaire.html")){
     const dietSection = document.getElementById("dietSection");
     const restrictionSection = document.getElementById("restrictionSection");
     const modal = document.getElementById("modal");
-    const form = document.getElementById("form");
+    const bannerBG = document.getElementById("backontop");
     const validateBtn = document.getElementById("validateBtn");
     const summaryIdentity = document.getElementById("summaryIdentity");
     const summaryReservation = document.getElementById("summaryReservation");
@@ -304,7 +309,7 @@ if(window.location.href.includes("formulaire.html")){
 
         // affichage des resultats
         modal.classList.remove("hidden");
-        form.classList.add("blur");
+        bannerBG.classList.add("blur");
 
         if(tblErrors.length > 0){
             divSummary.classList.remove("summary");
@@ -339,7 +344,7 @@ if(window.location.href.includes("formulaire.html")){
             const dietSection = document.getElementById("dietSection");
             const restrictionSection = document.getElementById("restrictionSection");
             const modal = document.getElementById("modal");
-            const form = document.getElementById("form");
+            const bannerBg = document.getElementById("backontop");
 
             const radio = document.querySelectorAll('input[type="radio"]');
             radio.forEach(radio => radio.checked = false);        
@@ -356,7 +361,7 @@ if(window.location.href.includes("formulaire.html")){
             restrictionSection.classList.add("hidden");
             dietSection.classList.add("hidden");
             modal.classList.add("hidden");
-            form.classList.remove("blur");
+            bannerBg.classList.remove("blur");
             validateBtn.classList.remove("hidden");
             errors.classList.add("results");
             errors.classList.remove("hidden");
@@ -375,12 +380,15 @@ if(window.location.href.includes("formulaire.html")){
 
     const navMobil = document.getElementById("navMobil");
     const burgerBtn = document.getElementById("burgerBtn");
+    const main = document.querySelector("main");
 
 
     burgerBtn.addEventListener("click",function(){
         if(navMobil.classList.contains("hidden-nav")){
+            main.classList.add("blur");
             navMobil.classList.remove("hidden-nav");
         } else {
+            main.classList.remove("blur");
             navMobil.classList.add("hidden-nav");
         };
     });

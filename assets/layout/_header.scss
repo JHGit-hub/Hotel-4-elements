@@ -2,6 +2,10 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/variables' as *;
 
+.blur{
+    filter: blur(10px);
+}
+
 header{
     @include display-flex(row, center, center);
     background-color: $bckgrd-color;
@@ -86,12 +90,6 @@ header{
     .header{
         position:relative;
     }
-    .burger-Bg{
-        background-color: $primary-color;
-        padding:0.2rem 0.5rem;
-        border-radius: 6px;
-        
-    }
     .header-mobil{
         position:absolute;
         z-index: 100;
@@ -105,12 +103,16 @@ header{
                 left:0%;
                 background-color: $tertiary-color;
                 width:200px;
-                border:solid 1px $tertiary-color;
                 border-radius: 10px;
+                padding:1rem;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
                 ul{
-                    @include display-flex(column, center, center);
+                    @include display-flex(column, center, flex-start);
                     gap:1.5rem;
-                    padding: 1rem 0;
+                    img{
+                        width:170px;
+                        height: auto;
+                    }
                 }
             }
         }

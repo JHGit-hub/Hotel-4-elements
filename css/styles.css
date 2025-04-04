@@ -120,6 +120,10 @@ body {
     display: none;
   }
 }
+.blur {
+  filter: blur(10px);
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -215,11 +219,6 @@ header {
   .header {
     position: relative;
   }
-  .burger-Bg {
-    background-color: #363A2B;
-    padding: 0.2rem 0.5rem;
-    border-radius: 6px;
-  }
   .header-mobil {
     position: absolute;
     z-index: 100;
@@ -238,16 +237,20 @@ header {
     left: 0%;
     background-color: #d9c7b3;
     width: 200px;
-    border: solid 1px #d9c7b3;
     border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   }
   .header-mobil .burger nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.5rem;
-    padding: 1rem 0;
+  }
+  .header-mobil .burger nav ul img {
+    width: 170px;
+    height: auto;
   }
   .header-mobil .social-mobil ul {
     display: flex;
@@ -530,6 +533,7 @@ footer .container-footer .footer-credits p {
   transform: translate(-50%, -50%);
   padding: 1.875rem 3.75rem;
   background-color: #d9c7b3;
+  border: solid 1px #363A2B;
   border-radius: 18px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   color: #363A2B;
@@ -706,7 +710,7 @@ footer .container-footer .footer-credits p {
 }
 .section-presentation .article-hotel .carrousel .slide {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
