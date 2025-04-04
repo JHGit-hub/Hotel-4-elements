@@ -9,10 +9,6 @@ Hôtel 4 Élements
 
 > Evaluation finale du module front établi avec Webecom. Il s'agit d'un site internet d'un groupe d'hotel ou l etait possible de visiter un hotel en particulier et d'y faire une reservation.
 
-## bug
-
-Sur la page Git hub, le js ne fonctionne pas, impossible de resoudre le probléme
-
 ## Figma's model
 
 https://www.figma.com/design/dBqaocgT9mPFFso3kHLEpV/maquette-hotel-4-elements?node-id=0-1&p=f&t=JNFlW0qfl3DuGznk-0

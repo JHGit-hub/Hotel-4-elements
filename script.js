@@ -3,7 +3,7 @@
 
 ////////////// carrousel
 
-if(window.location.pathname === "/index.html" || window.location.pathname === "https://jhgit-hub.github.io/Hotel-4-elements/index.html"){
+if(window.location.href.includes("index.html")){
 //creation des variables
 
     let carrouselBtnFeu = document.getElementById("carrouselBtnFeu");
@@ -116,7 +116,7 @@ if(window.location.pathname === "/index.html" || window.location.pathname === "h
 
 ////////////// carrousel
 
-if(window.location.pathname === "/pages/hotel-feu.html" || window.location.pathname === "https://jhgit-hub.github.io/Hotel-4-elements/pages/hotel-feu.html"){
+if(window.location.href.includes("hotel-feu.html")){
     let carrouselBtnFeu = document.getElementById("carrouselBtnFeu");
     let nodeSlideFeu = document.querySelectorAll(".carrousel-slideFeu");
     let tblSlideFeu = Array.from(nodeSlideFeu);
