@@ -19,3 +19,42 @@
         color: $tertiary-color;
     }
 }
+
+///////////////////// Media Queries /////////////////////
+
+
+@media (max-width:720px){
+
+    .section-formulaire{
+        overflow: hidden;
+        .container-fluid{
+            height:100vh;
+        }
+        .video-banner{
+            height:100%;
+           video{
+            transform:translate(-900px, -100px);
+                width:auto;
+                filter: brightness(80%);
+            }
+        }
+        .formulaire{
+            form{
+                width:auto;
+                .formulaire-identification{
+                    .form-style{
+                        flex-direction: column;
+                        gap:0;
+                    }
+                }
+                .formulaire-reservation{
+                    .reservation{
+                        .room{
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

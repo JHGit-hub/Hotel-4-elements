@@ -221,3 +221,39 @@
         }
     }
 }
+
+
+///////////////////// Media Queries /////////////////////
+
+
+@media (max-width:720px){
+
+.section-offers{
+    .container-offers{
+        .offers{
+            flex-direction: column;
+            gap:2rem;
+        }
+    }
+}
+
+.section-testimonials{
+    .container-card{
+        flex-direction: column;
+        gap:2rem;
+    }
+}
+
+.section-informations {
+    .container-informations{
+        .informations{
+            flex-direction: column;
+            gap:2rem;
+        }
+    }
+}
+
+
+
+
+}

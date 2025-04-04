@@ -215,6 +215,11 @@ header {
   .header {
     position: relative;
   }
+  .burger-Bg {
+    background-color: #363A2B;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+  }
   .header-mobil {
     position: absolute;
     z-index: 100;
@@ -1220,6 +1225,20 @@ footer .container-footer .footer-credits p {
   text-transform: capitalize;
 }
 
+@media (max-width: 720px) {
+  .section-offers .container-offers .offers {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .section-testimonials .container-card {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .section-informations .container-informations .informations {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 .section-formulaire {
   width: 100vw;
   position: relative;
@@ -1235,6 +1254,33 @@ footer .container-footer .footer-credits p {
 }
 .section-formulaire h3 {
   color: #d9c7b3;
+}
+
+@media (max-width: 720px) {
+  .section-formulaire {
+    overflow: hidden;
+  }
+  .section-formulaire .container-fluid {
+    height: 100vh;
+  }
+  .section-formulaire .video-banner {
+    height: 100%;
+  }
+  .section-formulaire .video-banner video {
+    transform: translate(-900px, -100px);
+    width: auto;
+    filter: brightness(80%);
+  }
+  .section-formulaire .formulaire form {
+    width: auto;
+  }
+  .section-formulaire .formulaire form .formulaire-identification .form-style {
+    flex-direction: column;
+    gap: 0;
+  }
+  .section-formulaire .formulaire form .formulaire-reservation .reservation .room {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -75,6 +75,9 @@ header{
 }
 
 
+///////////////////// Media Queries /////////////////////
+
+
 
 @media (max-width:720px){
     .header-desktop{
@@ -82,6 +85,12 @@ header{
     }
     .header{
         position:relative;
+    }
+    .burger-Bg{
+        background-color: $primary-color;
+        padding:0.2rem 0.5rem;
+        border-radius: 6px;
+        
     }
     .header-mobil{
         position:absolute;
@@ -105,14 +114,10 @@ header{
                 }
             }
         }
-
-
-
         .social-mobil ul{
             @include display-flex(row, center, center);
             gap:1rem;
         }
     }
-
 }
     
