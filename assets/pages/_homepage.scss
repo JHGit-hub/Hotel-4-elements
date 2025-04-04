@@ -88,7 +88,7 @@
                 @include display-flex(column, space-between, center);
                 gap:1rem;
                 img{
-                    height:621px;
+                    height:100%;
                     width:auto;
                 }
             }
@@ -255,6 +255,7 @@
 
     .section-presentation{
         .article-hotel{
+            height:auto;
             h2{
                 font-size:4rem;
             }
@@ -262,11 +263,7 @@
                 font-size: 1rem;
             }
             .carrousel{
-                .slide{
-                    .overflow{
-                        height: 374px;
-                    }  
-                }
+                height: 374px;
             }
         }
     }

@@ -709,7 +709,7 @@ footer .container-footer .footer-credits p {
   gap: 1rem;
 }
 .section-presentation .article-hotel .carrousel .slide img {
-  height: 621px;
+  height: 100%;
   width: auto;
 }
 
@@ -868,13 +868,16 @@ footer .container-footer .footer-credits p {
   .section-banner .primary-btn {
     z-index: 200;
   }
+  .section-presentation .article-hotel {
+    height: auto;
+  }
   .section-presentation .article-hotel h2 {
     font-size: 4rem;
   }
   .section-presentation .article-hotel p {
     font-size: 1rem;
   }
-  .section-presentation .article-hotel .carrousel .slide .overflow {
+  .section-presentation .article-hotel .carrousel {
     height: 374px;
   }
   .section-presentation .row:nth-of-type(1) .article-hotel,
