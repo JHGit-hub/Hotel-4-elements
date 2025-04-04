@@ -109,10 +109,37 @@ header{
                 ul{
                     @include display-flex(column, center, flex-start);
                     gap:1.5rem;
+                    li{
+                        a{
+                            text-transform: capitalize;
+                            text-decoration: none;
+                            transition: color 0.3s ease-in-out;
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                            text-decoration-color: $secondary-color;
+                            color: $secondary-color;
+                        } 
+                        img{
+                            width:170px;
+                            height: auto;
+                        }
+                    }
+                    /**
+                    a{
+                        text-transform: capitalize;
+                        text-decoration: none;
+                        transition: color 0.3s ease-in-out;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                        text-decoration-color: $secondary-color;
+                        color: $secondary-color;
+                    } 
                     img{
                         width:170px;
                         height: auto;
-                    }
+                    }**/
                 }
             }
         }
