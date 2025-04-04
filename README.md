@@ -7,7 +7,11 @@
 
 Hôtel 4 Élements
 
-> Evaluation finale du module front établi avec Webecom. Il s'agit d'un site internet d'un groupe d'hotel ou l etait possible de visiter un hotel en particulier et d'y faire une reservation.
+> Evaluation finale du module Front-End établi avec Webecom. 
+Il s'agit d'un site internet d'un groupe d'hotel ou il est possible de visiter un hôtel en particulier (hotel-feu) et d'y effectuer une reservation.
+A partir d'une maquette sur Figma, nous avons fait la Homepage de groupe d'hôtel, la page de l'hôtel Feu ainsi que la création de toute piéce d'une page formulaire pour réserver un séjour.
+La Homepage est totalement responsive, le projet est stylisé avec le SCSS et les animations sont gérer avec le javascript.
+ 
 
 ## Figma's model
 
