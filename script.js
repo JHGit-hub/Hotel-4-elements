@@ -180,7 +180,7 @@ if(window.location.pathname === "/pages/hotel-feu.html" || window.location.pathn
 
 ////////////////////////////// JS PAGE FORMULAIRE
 
-if(window.location.pathname === "/pages/formulaire.html" || window.location.pathname === "https://jhgit-hub.github.io/Hotel-4-elements/pages/formulaire.html"){
+if(window.location.href.includes("formulaire.html")){
 
 
 ////////////// formulaire de reservation
