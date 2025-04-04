@@ -239,7 +239,6 @@ if(window.location.pathname === "/pages/formulaire.html"){
         const cityName = document.getElementById("cityName").value.trim();
         const cityCode = document.getElementById("cityCode").value.trim();
         const hotel = document.getElementById("hotel").value;
-        const room = document.getElementById("room").value;
         const breackfast = document.getElementById("breackfast").checked;
         const lunch = document.getElementById("lunch").checked;
         const diner = document.getElementById("diner").checked;
@@ -249,6 +248,7 @@ if(window.location.pathname === "/pages/formulaire.html"){
         const driver = document.getElementById("driver").checked;
         const guide = document.getElementById("visit").checked;
 
+    
 
         // tableau de stockage des erreurs
         let tblErrors =[];
@@ -262,8 +262,10 @@ if(window.location.pathname === "/pages/formulaire.html"){
         const dietSection = document.querySelector('input[name="dietSection"]:checked')? 
         document.querySelector('input[name="dietSection"]').value : "aucun";
 
+        // attribution du nom de la chambre qui sera checked
+
         const roomValue = document.querySelector('input[name="room"]:checked')?
-        document.querySelector('input[name="room"]').value : "aucun";
+        document.querySelector('input[name="room"]:checked').value : "aucun";
 
         console.log(roomValue);
 
@@ -316,7 +318,7 @@ if(window.location.pathname === "/pages/formulaire.html"){
         if(!hotel)
             tblErrors.push("Choisissez un Hotel");
 
-        if(!room){
+        if(!roomValue){
             tblErrors.push("Choisissez une Chambre");
         } else if(roomValue === "Chambre igloo"){
             total += journey*500
@@ -397,7 +399,7 @@ if(window.location.pathname === "/pages/formulaire.html"){
             <span class="summary-span">Ville: </span>${cityCode}, ${cityName}<br>
             <span class="summary-span">Téléphone: </span>${phone}<br>
             <span class="summary-span">Email: </span>${email}.`
-            summaryReservation.innerHTML = `<span class="summary-span">Vous avez choisi </span>la ${room} de l'${hotel}<br>
+            summaryReservation.innerHTML = `<span class="summary-span">Vous avez choisi </span>la ${roomValue} de l'${hotel}<br>
             <span class="summary-span">pour un séjour de </span>${visitorsValue} personne(s)<br>
             <span class="summary-span">arrivée le </span>${arriveeFormatted}<br>
             <span class="summary-span">départ le </span>${departFormatted}`
